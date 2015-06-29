@@ -1,3 +1,11 @@
+# Goals #
+
+1. Analyze and report on how performance and communication scales with number of robots in a search-and-rescue task.
+1. Questions we need to answer:
+    1. Are we capable of controlling and using swarms now, as opposed to 10 years ago?
+    1. When and why does a swarm break-down?
+    1. What are the technological Mt. Everests? Communication, shared knowledge? 
+
 # Timeline #
 
 **June** Communication report and planning
