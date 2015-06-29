@@ -64,7 +64,7 @@
 # Simulation Components #
 
 1. Environment
-    1. **Goal**: Represent realistic outdoor terrain with different properties (trees, grassland, hills). These properties affect mobility, sensing, and communication
+    1. **Goal**: Represent large (10's of kilometers) realistic outdoor terrain with different properties (trees, grassland, hills). These properties affect mobility, sensing, and communication
 
     1. **Optimal case**: Full 3D environment
     1. **Minimal case**: 2D property map representation
