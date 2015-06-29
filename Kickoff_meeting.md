@@ -91,7 +91,7 @@
 
 # Communication #
 
-1. Physical layer
+1. Physical and data layer
     1. **802.11**: Larger data rates and range, but work power consumption
     1. **802.15.4**: Lower data rate and range, but better power consumption
 
