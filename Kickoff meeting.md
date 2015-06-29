@@ -44,17 +44,18 @@
 
 1. Analyze the results and summarize the scientific and technical findings
 
-
 # Software Development and Distribution #
 
 1. Components
 
-    1. Simulation: Gazebo
-    1. Team interface to simulation: Gazebo plugin
+    1. Simulation: Gazebo running on Ubuntu Trusty
+    1. Team interface to simulation: Gazebo plugin (C++ interface)
 
-1. Gazebo plugin API
+1. Gazebo plugin
 
-    1. API development will be conducted in this repository
+    1. API development will be conducted in this repository.
+    1. This plugin will be replicated for each robot.
+    1. Plugin update will occur in lock step with simulation.
 
 1. Software distribution
 
@@ -86,5 +87,21 @@
 
     1. **Implementation**: Work with Mike Goodrich. We'll likely create a simple person model (random walk) to get everyone started.
 
+# Communication #
 
+1. Physical layer
+    1. **802.11**: Larger data rates and range, but work power consumption
+    1. **802.15.4**: Lower data rate and range, but better power consumption
 
+1. Network layer
+    1. Support different routing protocols, such as DSDV, OLSR, AODV, and DSR.
+
+1. Transport layer: UDP
+
+1. Network Simulation
+
+    1. **EMANE**: Open source, but emulation only
+    1. **ns-3**: Open source, very good candidate but may run slower than real-time
+    1. **NetSim**: Proprietary, Windows only
+    1. **OMNeT++**: Potential second choice to ns-3
+    1. **StellCentral NetModeler Suite (formerly OPNET Modeler Suite)**:  Proprietary
