@@ -80,6 +80,8 @@
         1. GPS
         1. Logical camera: Reports location and type of objects seen within a viewing frustum. Information will be adjusted according to terrain properties
     1. **Radio**: Use ns-3 to simulate communication between vehicles
+    1. **Deployment**: All start at base of operations. Different configurations of aerial and ground vehicles will be used.
+
  
 1. Lost person
 
