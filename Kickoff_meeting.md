@@ -105,3 +105,12 @@
     1. **NetSim**: Proprietary, Windows only
     1. **OMNeT++**: Potential second choice to ns-3
     1. **StellCentral NetModeler Suite (formerly OPNET Modeler Suite)**:  Proprietary
+
+# Data collection #
+
+Use Gazebo's logging utility to save:
+
+1. Simulation state: Starting configuration along with current position of each vehicle
+1. Communication: Save messages passed between vehicles
+1. Controller actions: Save commands sent to the vehicles
+1. Timing: Timestamps will be applied to logged data. We will look at recording time required to update vehicles.
