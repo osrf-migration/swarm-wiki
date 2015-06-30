@@ -8,13 +8,13 @@
 > Yes. The size of the world and GPS starting location will be provided.
 
 1. Are there any other features of the environment that can be provided to the robots a-priori?
-> Answer pending, stay tuned.
+> We expect that some extra information about the environment will be provided.  We may provide detailed maps, coarse maps, maps with potential errors or gaps, and/or distributions (e.g., this area is 50% forested).  We will work out with teams and DARPA what information should be provided to produce useful experimental results.
 
 1. Will there be a fixed base-station with a known location?
 > Yes, the base station (a.k.a base of operations) will be the same location as the start location.
 
 1. Will you be providing a model of how GPS and camera (sensing data) are affected by the environment? (So that we can exploit this in our algorithms)
-> Answer pending, stay tuned.
+> We will provide statistical models of the robot's sensing and actuation, which will both be corrupted by noise.
 
 1. The wiki mentions that different configurations of aerial and ground vehicles will be used. Will these configs be given, or do we decide? Also, does 'config' just mean proportion of ground-to-aerial, or are there more parameters that can be tuned? (I remember there was a similar question in the call, but don't recall your answer...)
 > Initially the teams will choose the distribution of aerial and ground vehicles. OSRF will likely have you run a few specific distributions to have a consistent sampling between teams. The routing protocol will very likely be a configuration option that you can choose. Depending on the network simulator, you may also be able to choose between 802.11 and 802.15.4. All of this information will be included in the API and usage documentation.
