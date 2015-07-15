@@ -2,6 +2,9 @@
 
 1. [June 29th, Kickoff](https://bitbucket.org/osrf/swarm/wiki/Kickoff_meeting)
 
+# Communication Report
+
+
 # FAQ
 
 1. Will the size of 'world' be known? (I.e., does my robot team know the GPS-coordinates of the search space?)
