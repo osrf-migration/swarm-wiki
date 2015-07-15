@@ -5,7 +5,7 @@ In this page, we describe plans for simulating robot
 swarms, with particular attention to which aspects of communication are
 simulated, and how they are modeled.
 
-This content is a summary of a detailed communication report.
+This content is a summary of a [detailed communication report](https://bytebucket.org/osrf/swarm/raw/603c179f3d151d8cd41f83a9b67f3a26fa655daf/docs/comm_report.pdf).
 
 RF Propagation
 ====
