@@ -2,8 +2,9 @@
 
 1. [June 29th, Kickoff](https://bitbucket.org/osrf/swarm/wiki/Kickoff_meeting)
 
-# Communication Report
+# Swarm communication
 
+* July 15th: The Swarm_Communication page contains detail on the current communication plan.
 
 # FAQ
 
