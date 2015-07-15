@@ -22,3 +22,9 @@
 
 1. The wiki mentions that different configurations of aerial and ground vehicles will be used. Will these configs be given, or do we decide? Also, does 'config' just mean proportion of ground-to-aerial, or are there more parameters that can be tuned? (I remember there was a similar question in the call, but don't recall your answer...)
 > Initially the teams will choose the distribution of aerial and ground vehicles. OSRF will likely have you run a few specific distributions to have a consistent sampling between teams. The routing protocol will very likely be a configuration option that you can choose. Depending on the network simulator, you may also be able to choose between 802.11 and 802.15.4. All of this information will be included in the API and usage documentation.
+
+1. How will power consumption be handled?
+> We are still working out the fine details. Currently, each robot will have the concept of available power and power costs for locomotion and communication. Ground vehicles and fixed wing will have more power than rotorcraft.
+
+1. Environments and line of sight.
+> Line of sight between vehicles will be used to determine if communication is possible. Intervening terrain and buildings will prevent communication. Vegetation will degrade communication. 
