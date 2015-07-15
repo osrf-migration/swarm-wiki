@@ -4,7 +4,7 @@
 
 # Swarm communication
 
-* July 15th: The Swarm_Communication page contains detail on the current communication plan.
+* July 15th: The [Swarm_Communication](https://bitbucket.org/osrf/swarm/wiki/Swarm_Communication) page contains detail on the current communication plan.
 
 # FAQ
 
