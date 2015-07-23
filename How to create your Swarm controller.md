@@ -34,7 +34,7 @@ Your first controller (*libSwarmControllerPlugin.so*) is ready to be tested. We 
 
 Run Gazebo with a basic Swarm world file:
 
-gazebo worlds/swarm_empty.world --verbose
+        gazebo worlds/swarm_empty.world --verbose
 
 You should see the following output on the console:
 
