@@ -10,7 +10,7 @@ Before installing Gazebo, you need a machine with [Ubuntu](http://www.ubuntu.com
 
 # ns-3 installation #
 
-Follow the detailed instructions described in the [ns-3 installation tutorial](https://www.nsnam.org/wiki/Installation).
+Follow the instructions described in the [ns-3 installation tutorial](https://www.nsnam.org/wiki/Installation).
 
 # Swarm client library #
 
