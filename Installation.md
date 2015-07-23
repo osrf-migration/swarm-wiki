@@ -2,7 +2,7 @@
 
 The Swarm project aims to study the problem of collective control of large teams (*swarms*) of air and ground robots. Our focus is the scalability of such teams, in particular with regard to: (i) communication systems and (ii) coordination algorithms. The study will take place in simulation and the simulated task will be cooperative search for one or more lost persons in an outdoor environment.
 
-The Swarm setup is composed of a [Gazebo robot simulator]((www.gazebosim.org)), a [ns-3 network simulator](nsnam), a client library and a client controller. Gazebo simulates the environment, the robots, and the sensors, whereas ns-3 models and simulates the communication among the vehicles. The client library offers the communication, sensor access and motion API to the client controller. The client controller guides each simulated robot using the Swarm API.
+The Swarm setup is composed of a [Gazebo robot simulator]((www.gazebosim.org)), a [ns-3 network simulator](nsnam), a client library and a client controller. Gazebo simulates the environment, the robots, and the sensors, whereas ns-3 models and simulates the communication among the vehicles. The Swarm client library offers the communication, sensor access and motion API to the client controller. The client controller guides each simulated robot using the Swarm API.
 
 # Gazebo installation #
 
