@@ -27,10 +27,10 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
 * Sensors
     * (*to be announced*)
 
-## One-line install ##
+## Option 1: One-line install ##
    (to be announced)
 
-## Install from source ##
+## Option 2: Install from source ##
 
 ### Install Required Dependencies ###
 
