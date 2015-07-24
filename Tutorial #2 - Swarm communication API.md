@@ -92,7 +92,7 @@ http://gazebosim.org
 
 # Walkthrough #
 
-In this example, we are loading two vehicles with addresses `192.168.2.1` and `192.168.2.2`. If you open the world file distributed with your Swarm client library, you will be able to see model blocks and how the address and other parameters are specified:
+In this example, we are loading two vehicles with addresses `192.168.2.1` and `192.168.2.2`. If you open the world file distributed with your Swarm client library, you will be able to see the model blocks and how the address and other parameters are specified:
 
 ```
 #!python
