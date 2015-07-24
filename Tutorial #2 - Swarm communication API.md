@@ -150,7 +150,7 @@ void TeamControllerPlugin::Load(sdf::ElementPtr _sdf)
 }
 ```
 
-As you can see in the previous snippet, we are using `HasElement()` and `Get()` functions for handling custom SDF parameters (in this case the parameter is `<num_messages>`. We also bind to our local and multicast addresses for receiving unicast and multicast messages. In this example we use the same callback but you could use different callbacks if you prefer to dispatch the messages differently.
+As you can see in the previous snippet, we are using `HasElement()` and `Get()` functions for handling custom SDF parameters (in this case the parameter is `<num_messages>`. We also bind to our local and multicast addresses for receiving unicast and multicast messages. In this example we use the same callback but you could use different callbacks if you prefer to dispatch the messages differently. Note that the ports are optional and if not used, the default port will be used.
 
 
 After executing the `Load()` function, each controller periodically executes its `TeamControllerPlugin::Update()` function. In the following snippet we can see how the different messages are sent:
