@@ -218,4 +218,4 @@ void TeamControllerPlugin::OnDataReceived(const std::string &_srcAddress,
 }
 ```
 
-This is the callback that we specified when we used the `Bind()` function. As you can see in the previous snippet, the address of the sender is available as a parameter, as wells as the data in std::string format. Note that a controller will receive its own messages when sending broadcast and multicast messages.
+This is the callback that we specified when we used the `Bind()` function. As you can see in the previous snippet, the address of the sender is available as a parameter, as wells as the data in `std::string` format. Note that a controller will receive its own messages when sending broadcast and multicast messages.
