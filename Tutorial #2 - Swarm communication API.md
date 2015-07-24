@@ -124,7 +124,7 @@ In this example, we are loading two vehicles with addresses `192.168.2.1` and `1
 </model>
 ```
 
-Once a model loads the `TeamControllerPlugin`, its `Load()` function is executed. This function executes only one time and it is the recommended place for reading SDF parameters and binding to your local address. Do not try to do these tasks in the class constructor because some of the Gazebo components might not be ready.
+Once a model loads its controller plugin, its `Load()` function is executed. This function executes only one time and it is the recommended place for reading SDF parameters and binding to your local address. Do not try to do these tasks in the class constructor because some of the Gazebo components might not be ready.
 
 ```
 #!python
