@@ -99,10 +99,8 @@ In this example, we are loading two vehicles with addresses `192.168.2.1` and `1
 
 <!-- Robot #1-->
 <model name="robot1">
-  <pose>0 1 0 0 0 0</pose>
-  <include>
-    <uri>model://cinder_block</uri>
-  </include>
+  
+  [...]
 
   <!-- Load the plugin to control this robot -->
   <plugin name="swarm_controller_1" filename="libTeamControllerPlugin.so">
@@ -114,10 +112,8 @@ In this example, we are loading two vehicles with addresses `192.168.2.1` and `1
 
 <!-- Robot #2-->
 <model name="robot2">
-  <pose>0 2 0 0 0 0</pose>
-  <include>
-    <uri>model://cinder_block</uri>
-  </include>
+
+  [...]  
 
   <!-- Load the plugin to control this robot -->
   <plugin name="swarm_controller_2" filename="libTeamControllerPlugin.so">
