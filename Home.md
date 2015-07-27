@@ -1,6 +1,6 @@
 # Tutorials (under construction)
 
-*Note: these tutorials depend on unreleased code in both Gazebo and Swarm; please check back soon.**
+*Note: these tutorials are currently intended for developers only (they depend on unreleased code in Gazebo and Swarm); please check back soon.*
 
 1. [Installation](../../wiki/Installation.md)
 1. [How to create your Swarm controller](https://bitbucket.org/osrf/swarm/wiki/Tutorial%20%231%20-%20How%20to%20create%20your%20Swarm%20controller)
