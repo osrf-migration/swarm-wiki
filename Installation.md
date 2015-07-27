@@ -47,7 +47,7 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
 
 1. Install prerequisites. A clean Ubuntu system will need:
 
-        sudo apt-get install build-essential cmake mercurial libprotoc-dev protobuf-compiler libignition-transport-dev
+        sudo apt-get install build-essential cmake mercurial libprotoc-dev protobuf-compiler libignition-transport-dev libignition-math-dev
 
 ### Build and install Swarm client library ###
 
