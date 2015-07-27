@@ -1,5 +1,7 @@
 # Tutorials (under construction)
 
+*Note: these tutorials depend on unreleased code in both Gazebo and Swarm; please check back soon.**
+
 1. [Installation](../../wiki/Installation.md)
 1. [How to create your Swarm controller](https://bitbucket.org/osrf/swarm/wiki/Tutorial%20%231%20-%20How%20to%20create%20your%20Swarm%20controller)
 1. [Swarm communication API](https://bitbucket.org/osrf/swarm/wiki/Tutorial%20%232%20-%20Swarm%20communication%20API)
