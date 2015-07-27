@@ -97,10 +97,10 @@ http://gazebosim.org
 
 # Walkthrough #
 
-In this example, we are loading two vehicles with addresses `192.168.2.1` and `192.168.2.2`. If you open the world file distributed with your Swarm client library, you will be able to see the model blocks and how the address and other parameters are specified:
+In this example, we are loading two vehicles with addresses `192.168.2.1` and `192.168.2.2`. If you open the world file distributed with your Swarm client library (`/usr/share/gazebo-6.0/worlds/swarm_empty.world`), you will be able to see the model blocks and how the address and other parameters are specified:
 
 ```
-#!python
+#!xml
 
 <!-- Robot #1-->
 <model name="robot1">
@@ -132,7 +132,7 @@ In this example, we are loading two vehicles with addresses `192.168.2.1` and `1
 Once a model loads its controller plugin, its `Load()` function is executed. This function executes only one time and it is the recommended place for reading SDF parameters and binding to your local address. Do not try to do these tasks in the class constructor because some of the Gazebo components might not be ready.
 
 ```
-#!python
+#!c++
 
 //////////////////////////////////////////////////
 void TeamControllerPlugin::Load(sdf::ElementPtr _sdf)
@@ -161,7 +161,7 @@ As you can see in the previous snippet, we are using `HasElement()` and `Get()` 
 After executing the `Load()` function, each controller periodically executes its `TeamControllerPlugin::Update()` function. In the following snippet we can see how the different messages are sent:
 
 ```
-#!python
+#!c++
 
 // Check if we already reached the limit of messages to be sent.
 if (this->msgsSent < this->numMessageToSend)
@@ -210,7 +210,7 @@ The first task that the controller does is to set the destination address. Then,
 
 
 ```
-#!python
+#!c++
 
 //////////////////////////////////////////////////
 void TeamControllerPlugin::OnDataReceived(const std::string &_srcAddress,
