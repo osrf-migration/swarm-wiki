@@ -15,7 +15,7 @@ A Swarm controller is implemented as a model plugin attached to one of the robot
         wget https://s3.amazonaws.com/osrf-distributions/swarm/swarm_controller/TeamControllerPlugin.hh
         wget https://s3.amazonaws.com/osrf-distributions/swarm/swarm_controller/TeamControllerPlugin.cc
 
-1. Create a *build* directory:
+1. Create a `build` directory:
 
         mkdir build
         cd build
