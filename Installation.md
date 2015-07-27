@@ -6,11 +6,11 @@ The Swarm setup is composed of a [Gazebo robot simulator]((www.gazebosim.org)), 
 
 # Gazebo installation #
 
-Before installing Gazebo, you need a machine with [Ubuntu](http://www.ubuntu.com/) 14.04 64-bit or later installed. Then, follow the instructions detailed in the [Gazebo installation tutorial](http://gazebosim.org/tutorials?cat=install).
+Before installing Gazebo, you need a machine with [Ubuntu](http://www.ubuntu.com/) 14.04 64-bit or later installed. Then, follow the instructions detailed in the [Gazebo installation tutorial](http://gazebosim.org/tutorials?tut=install_ubuntu&ver=5.0&cat=install).  If you choose the step-by-step installation, be sure to install the extra `libgazebo5-dev` package.
 
 # ns-3 installation #
 
-Follow the instructions described in the [ns-3 installation tutorial](https://www.nsnam.org/wiki/Installation).
+Follow the instructions described in the [ns-3 installation tutorial](https://www.nsnam.org/wiki/Installation).  You might find the [Bake installation method](https://www.nsnam.org/wiki/Installation#Installation_with_Bake) easiest.
 
 # Swarm client library #
 
@@ -34,30 +34,28 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
 
 ### Install Required Dependencies ###
 
-1. Setup your computer to accept software from *packages.osrfoundation.org*:
+1. Set up your computer to accept software from *packages.osrfoundation.org*:
   
         sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list'
   
-1. Setup keys:
+1. Set up keys:
 
         wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 
 
 1. Install prerequisites. A clean Ubuntu system will need:
 
-
-        sudo apt-get install build-essential cmake mercurial libprotoc-dev protobuf-compiler ignition-transport
-
+        sudo apt-get install build-essential cmake mercurial libprotoc-dev protobuf-compiler libignition-transport-dev
 
 ### Build and install Swarm client library ###
 
 1. Clone the repository into a directory in your home folder:
 
-        cd ~; hg clone https://bitbucket.org/osrf/swarm
+        hg clone https://bitbucket.org/osrf/swarm
 
 1. Change directory in the Swarm repository:
 
-        cd ~/swarm
+        cd swarm
 
 1. Create a *build* directory and go there:
 
@@ -72,7 +70,7 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
 
 1. Change to the *example* directory and create a *build* folder:
 
-        cd ../../example
+        cd ../example
         mkdir build
         cd build
 
@@ -86,7 +84,7 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
 
 In the previous step we installed the Swarm client library `libSwarmRobotPlugin.so` and a client controller example `libTeamControllerPlugin.so`. Run the following command to test your installation:
 
-        gzserver worlds/swarm_test.world --verbose
+        gzserver worlds/swarm_empty.world --verbose
 
 You should see the following output confirming that your installation succeed:
 
