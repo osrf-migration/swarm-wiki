@@ -22,10 +22,13 @@ Download the [swarm_comms_tutorial.tgz](https://bitbucket.org/osrf/swarm/downloa
 
 Change to the new directory and create a *build* directory:
 
-        cd swarm_comms_tutorial; mkdir build; cd build
+        cd swarm_comms_tutorial
+        mkdir build
+        cd build
 
 Compile the controller:
 
+        cmake .. -DCMAKE_INSTALL_PREFIX=/usr
         make -j4
         sudo make install
 
