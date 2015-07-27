@@ -16,6 +16,8 @@ You can check the [C++ API](https://s3.amazonaws.com/osrf-distributions/swarm/ap
 
 # Simple communication among agents #
 
+**TODO: After pull request #6 is merged, replace this download with `wget` calls to the appropriate place in the repo.**
+
 Download the [swarm_comms_tutorial.tgz](https://bitbucket.org/osrf/swarm/downloads/swarm_comms_tutorial.tgz) file in your HOME directory and extract it:
 
         tar xvfz ~/swarm_comms_tutorial.tgz
