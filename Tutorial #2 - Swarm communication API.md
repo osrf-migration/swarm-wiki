@@ -16,25 +16,29 @@ You can check the [C++ API](https://s3.amazonaws.com/osrf-distributions/swarm/ap
 
 # Simple communication among agents #
 
-**TODO: After pull request #6 is merged, replace this download with `wget` calls to the appropriate place in the repo.**
+1. First, create a `swarm_controller2` directory:
 
-Download the [swarm_comms_tutorial.tgz](https://bitbucket.org/osrf/swarm/downloads/swarm_comms_tutorial.tgz) file in your HOME directory and extract it:
+        mkdir swarm_controller2
+        cd swarm_controller2
 
-        tar xvfz ~/swarm_comms_tutorial.tgz
+1. Download the example files into the `swarm_controller2` directory:
 
-Change to the new directory and create a *build* directory:
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_2/CMakeLists.txt
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_2/TeamControllerPlugin.hh
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_2/TeamControllerPlugin.cc
 
-        cd swarm_comms_tutorial
+1. Create a `build` directory:
+
         mkdir build
         cd build
 
-Compile the controller:
+1. Compile the controller:
 
         cmake .. -DCMAKE_INSTALL_PREFIX=/usr
         make -j4
         sudo make install
 
-Execute the controller:
+1. Execute the controller:
 
         gzserver worlds/swarm_empty.world --verbose
 
