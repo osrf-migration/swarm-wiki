@@ -9,7 +9,7 @@ A Swarm controller is implemented as a model plugin attached to one of the robot
         mkdir swarm_controller
         cd swarm_controller
 
-1. Download the example files into the `swarm_controller` directory: **TODO: After pull request #6 is merged, replace this download with `wget` calls to the appropriate place in the repo.**
+1. Download the example files into the `swarm_controller` directory:
 
         wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_1/CMakeLists.txt
         wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_1/TeamControllerPlugin.hh
