@@ -11,9 +11,9 @@ A Swarm controller is implemented as a model plugin attached to one of the robot
 
 1. Download the example files into the `swarm_controller` directory: **TODO: After pull request #6 is merged, replace this download with `wget` calls to the appropriate place in the repo.**
 
-        wget https://s3.amazonaws.com/osrf-distributions/swarm/swarm_controller/CMakeLists.txt
-        wget https://s3.amazonaws.com/osrf-distributions/swarm/swarm_controller/TeamControllerPlugin.hh
-        wget https://s3.amazonaws.com/osrf-distributions/swarm/swarm_controller/TeamControllerPlugin.cc
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_1/CMakeLists.txt
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_1/TeamControllerPlugin.hh
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_1/TeamControllerPlugin.cc
 
 1. Create a `build` directory:
 
