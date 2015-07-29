@@ -11,6 +11,7 @@ The Swarm client library contains three functions related with communications:
 * **Bind(callback, address, port)**: This method binds an address and port to a virtual socket, and sends incoming messages to the specified callback.
 * **SendTo(data, address, port)**: This method allows an agent to send data to other individual agent (unicast), all the agents (broadcast), or a group of agents (multicast). The addresses for sending broadcast and multicast messages are `kBroadcast` and `kMulticast` respectively.
 * **Host()**: This method returns the address of the robot where the controller is running.
+* **Neighbors()**: This method returns the addresses of other vehicles that are inside the communication range of this robot.
 
 You can check the [C++ API](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/index.html) full documentation.
 
