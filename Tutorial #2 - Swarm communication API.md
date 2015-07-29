@@ -57,6 +57,11 @@ http://gazebosim.org
 [Msg] Waiting for master.
 [Msg] Connected to gazebo master @ http://127.0.0.1:11345
 [Msg] Publicized address: 172.23.1.7
+[Msg] BrokerPlugin::ReadSwarmFromSDF: 2 swarm members found
+[Msg] [192.168.2.1] Neighbors:
+[Msg] 	192.168.2.2
+[Msg] [192.168.2.2] Neighbors:
+[Msg] 	192.168.2.1
 [Msg] ---
 [Msg] [192.168.2.2] New message received
 [Msg] 	From: [192.168.2.1]
@@ -211,7 +216,24 @@ if (this->msgsSent < this->numMessageToSend)
 }
 ```
 
-The first task that the controller does is to set the destination address. Then, the controller uses the function `SendTo()` for sending a unicast message, a broadcast message and a multicast message. Note that you don't need to `Bind()` for sending messages. `Bind()` is only used if you are interested on receiving messages. Finally, the following snippet shows the callback associated to the incoming messages:
+The first task that the controller does is to set the destination address. Then, the controller uses the function `SendTo()` for sending a unicast message, a broadcast message and a multicast message. Note that you don't need to `Bind()` for sending messages. `Bind()` is only used if you are interested on receiving messages. The next snippet shows how to print the list of local neighbors to each robot:
+
+```
+#!python
+
+// Show the list of neighbors.
+if (this->Neighbors().empty())
+  gzmsg << "[" << this->Host() << "] Neighbors: EMPTY" << std::endl;
+else
+{
+  gzmsg << "[" << this->Host() << "] Neighbors:" << std::endl;
+  for (auto const &neighbor : this->Neighbors())
+    gzmsg << "\t" << neighbor << std::endl;
+}
+
+```
+
+Finally, the following snippet shows the callback associated to the incoming messages:
 
 
 ```
