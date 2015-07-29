@@ -26,10 +26,14 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
     * Bind(): This function binds an address to a virtual socket, and sends incoming messages to the specified callback.
     * SendTo(): This function allows an agent to send data to other individual agent (unicast), all the agents (broadcast), or a group of agents (multicast).
     * Host(): This function returns the agent's address.
+    * Neighbors(): This method returns the addresses of other vehicles that are inside the communication range of this robot.
 * Motion
-    * (*to be announced*)
+    * Type(): This method returns the type of vehicle where this controller is running.
+    * SetLinearVelocity(): New linear velocity applied to the robot.
+    * SetAngularVelocity(): New angular velocity applied to the robot.
 * Sensors
-    * (*to be announced*)
+    * GetPose(): Get the robot's current pose from its GPS sensor.
+    * GetSearchArea(): Get the search area, in GPS coordinates.
 
 ## Option 1: One-line install ##
    (to be announced)
