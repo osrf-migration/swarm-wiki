@@ -41,7 +41,7 @@ You can check the [C++ API](https://s3.amazonaws.com/osrf-distributions/swarm/ap
 
 1. Execute the controller:
 
-        gzserver worlds/swarm_empty.world --verbose
+        gzserver worlds/ground_simple_2.world --verbose
 
 You should see the following output:
 
@@ -107,34 +107,34 @@ http://gazebosim.org
 
 # Walkthrough #
 
-In this example, we are loading two vehicles with addresses `192.168.2.1` and `192.168.2.2`. If you open the world file distributed with your Swarm client library (`/usr/share/gazebo-6.0/worlds/swarm_empty.world`), you will be able to see the model blocks and how the address and other parameters are specified:
+In this example, we are loading two vehicles with addresses `192.168.2.1` and `192.168.2.2`. If you open the world file distributed with your Swarm client library (`/usr/share/gazebo-6.0/worlds/ground_simple_2.world`), you will be able to see the model blocks and how the address and other parameters are specified:
 
 ```
 #!xml
 
-<!-- Robot #1-->
-<model name="robot1">
+<!-- Robot #0-->
+<model name="ground_0">
   
   [...]
 
   <!-- Load the plugin to control this robot -->
-  <plugin name="swarm_controller_1" filename="libTeamControllerPlugin.so">
+  <plugin name="swarm_controller_0" filename="libTeamControllerPlugin.so">
+    [...]
     <address>192.168.2.1</address>
     <num_messages>1</num_messages>
-    <type>ground</type>
   </plugin>
 </model>
 
-<!-- Robot #2-->
-<model name="robot2">
+<!-- Robot #1-->
+<model name="ground_1">
 
   [...]  
 
   <!-- Load the plugin to control this robot -->
-  <plugin name="swarm_controller_2" filename="libTeamControllerPlugin.so">
+  <plugin name="swarm_controller_1" filename="libTeamControllerPlugin.so">
+    [...]
     <address>192.168.2.2</address>
     <num_messages>1</num_messages>
-    <type>ground</type>
   </plugin>
 </model>
 ```
