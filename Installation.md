@@ -4,7 +4,7 @@ The Swarm project aims to study the problem of collective control of large teams
 
 The Swarm setup is composed of a [Gazebo robot simulator]((www.gazebosim.org)), a [ns-3 network simulator](nsnam), a client library and a client controller. Gazebo simulates the environment, the robots, and the sensors, whereas ns-3 models and simulates the communication among the vehicles. The Swarm client library offers the communication, sensor access and motion API to the client controller. The client controller guides each simulated robot using the Swarm API.
 
-# Gazebo installation #
+# Gazebo installation #sudo make install
 
 *Note: Gazebo 6 is required.*
 
@@ -55,7 +55,7 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
 
 1. Install prerequisites. A clean Ubuntu system will need:
 
-        sudo apt-get install build-essential cmake mercurial libprotoc-dev protobuf-compiler libignition-transport-dev libignition-math2-dev
+        sudo apt-get install build-essential cmake mercurial libprotoc-dev protobuf-compiler libignition-transport-dev libignition-math2-dev ruby
 
 ### Build and install Swarm client library ###
 
