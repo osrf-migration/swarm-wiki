@@ -92,59 +92,12 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
 
 In the previous step we installed the Swarm client library `libSwarmRobotPlugin.so` and a client controller example `libTeamControllerPlugin.so`. Run the following command to test your installation:
 
-        gzserver worlds/swarm_empty.world --verbose
+        gzserver worlds/ground_simple_2.world
 
 You should see the following output confirming that your installation succeed:
 
 ```
 #!python
-
-Gazebo multi-robot simulator, version 6.0.7
-Copyright (C) 2012-2015 Open Source Robotics Foundation.
-Released under the Apache 2 License.
-http://gazebosim.org
-
-[Msg] Waiting for master.
-[Msg] Connected to gazebo master @ http://127.0.0.1:11345
-[Msg] Publicized address: 172.23.1.7
-[Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.1]
-[Msg] 	Data: [Unicast data]
-[Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.1]
-[Msg] 	Data: [Broadcast data]
-[Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.1]
-[Msg] 	Data: [Broadcast data]
-[Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.1]
-[Msg] 	Data: [Multicast data]
-[Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.1]
-[Msg] 	Data: [Multicast data]
-[Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.2]
-[Msg] 	Data: [Unicast data]
-[Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.2]
-[Msg] 	Data: [Broadcast data]
-[Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.2]
-[Msg] 	Data: [Broadcast data]
-[Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.2]
-[Msg] 	Data: [Multicast data]
-[Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.2]
-[Msg] 	Data: [Multicast data]
+[192.168.2.1] TeamController plugin loaded
+[192.168.2.2] TeamController plugin loaded
 ```
