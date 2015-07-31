@@ -6,9 +6,11 @@ The Swarm setup is composed of a [Gazebo robot simulator]((www.gazebosim.org)), 
 
 # Gazebo installation #
 
-*Note: Gazebo 6 is required.  It will be officially released soon.*
+*Note: Gazebo 6 is required.*
 
-Before installing Gazebo, you need a machine with [Ubuntu](http://www.ubuntu.com/) 14.04 64-bit or later installed. Then, follow the instructions detailed in the [Gazebo installation tutorial](http://gazebosim.org/tutorials?cat=install).  If you choose the step-by-step installation, be sure to install the extra `libgazebo6-dev` package.
+Before installing Gazebo, you need a machine with [Ubuntu](http://www.ubuntu.com/) 14.04 64-bit or later installed. Then, follow the instructions detailed in the [Gazebo installation tutorial](http://gazebosim.org/tutorials?tut=install_ubuntu&ver=6.0&cat=install).  If you choose the step-by-step installation, be sure to install the extra `libgazebo6-dev` package.
+
+In short, on Ubuntu:
 
 # ns-3 installation #
 
