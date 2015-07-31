@@ -43,7 +43,7 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
 ## Option 2: Install from source ##
 
 ### Install Required Dependencies ###
-
+gzserver worlds/ground_simple_2.world
 1. Set up your computer to accept software from *packages.osrfoundation.org*:
   
         sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list'
@@ -94,12 +94,22 @@ The Swarm client library is a [model plugin](http://gazebosim.org/tutorials?tut=
 
 In the previous step we installed the Swarm client library `libSwarmRobotPlugin.so` and a client controller example `libTeamControllerPlugin.so`. Run the following command to test your installation:
 
-        gzserver worlds/ground_simple_2.world
+        gzserver --verbose worlds/ground_simple_2.world
 
-You should see the following output confirming that your installation succeed:
+You should see the following output confirming that your installation succeeded, similar to:
 
 ```
 #!python
-[192.168.2.1] TeamController plugin loaded
-[192.168.2.2] TeamController plugin loaded
+[Msg] BrokerPlugin::ReadSwarmFromSDF: 2 swarm members found
+[Msg] [192.168.2.1] Neighbors:
+[Msg] 	192.168.2.2
+[Msg] [192.168.2.1] search area: 35.7653 35.7853 -120.784 -120.764
+[Msg] [192.168.2.1] lat long alt: 35.7753 -120.774 208.05
+[Msg] [192.168.2.2] Neighbors:
+[Msg] 	192.168.2.1
+[Msg] ---
+[Msg] [192.168.2.2] New message received
+[Msg] 	From: [192.168.2.1]
+[Msg] 	Data: [Unicast data]
+[Msg] ---
 ```
