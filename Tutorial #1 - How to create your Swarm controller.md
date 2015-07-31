@@ -52,9 +52,9 @@ http://gazebosim.org
 [Msg] Waiting for master.
 [Msg] Connected to gazebo master @ http://127.0.0.1:11345
 [Msg] Publicized address: 172.23.1.7
-[Msg] Swarm controller plugin loaded successfully
-[Msg] Swarm controller plugin loaded successfully
-
+[Msg] BrokerPlugin::ReadSwarmFromSDF: 2 swarm members found
+[Msg] [192.168.2.1] Swarm controller plugin loaded successfully
+[Msg] [192.168.2.2] Swarm controller plugin loaded successfully
 ```
 
 Note that there are two confirmation messages because this world file loads two models, hence two robot controllers will be loaded in Gazebo.
