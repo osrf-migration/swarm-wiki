@@ -30,16 +30,16 @@ Two location functions are provided:
 
 # Example usage
 
-1. First, create a `swarm_controller3` directory:
+1. First, create a `swarm_controller4` directory:
 
-        mkdir swarm_controller3
-        cd swarm_controller3
+        mkdir swarm_controller4
+        cd swarm_controller4
 
-1. Download the example files into the `swarm_controller3` directory:
+1. Download the example files into the `swarm_controller4` directory:
 
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_3/CMakeLists.txt
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_3/TeamControllerPlugin.hh
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_3/TeamControllerPlugin.cc
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_4/CMakeLists.txt
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_4/TeamControllerPlugin.hh
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_4/TeamControllerPlugin.cc
 
 1. Create a `build` directory:
 
