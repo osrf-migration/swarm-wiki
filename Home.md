@@ -14,7 +14,7 @@ Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first.
 1. [Velocity control](https://bitbucket.org/osrf/swarm/wiki/Tutorial_2-Velocity_Control)
 1. [Swarm communication API](https://bitbucket.org/osrf/swarm/wiki/Tutorial_3-Swarm_communication_API)
 1. [GPS Sensor](https://bitbucket.org/osrf/swarm/wiki/Tutorial_4-GPS_sensor)
-1. [Camera Sensor](https://bitbucket.org/osrf/swarm/wiki/Tutorial_4-Camera_sensor)
+1. [Camera Sensor](https://bitbucket.org/osrf/swarm/wiki/Tutorial_5-Camera_sensor)
 
 # Test worlds
 
