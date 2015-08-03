@@ -6,7 +6,7 @@ This tutorial will describe the camera sensor, and how to detect gather informat
 
 A logical camera is used to detect robots and other objects, such as a lost person, that fall within a specified view frustum. The logical_camera does not generate pixel images. Instead a list of detected objects along with their relative poses is generated.
 
-* [SDF specification]()
+* [SDF specification](http://sdformat.org/spec?ver=1.5&elem=sensor#sensor_logical_camera)
 
 * [Gazebo API]()
 
