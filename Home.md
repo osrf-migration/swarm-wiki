@@ -1,3 +1,12 @@
+# Important links
+
+1. [API](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/index.html): Team controller API.
+
+1. [Gazebo Help](http://answers.gazebosim.org): A forum for finding solutions and asking questions about 
+Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first. 
+
+1. [Swarm mailing list](https://groups.google.com/a/osrfoundation.org/forum/#!forum/swarm): A mailing list for general communication, discussion, and help.
+
 # Tutorials
 
 1. [Install](https://bitbucket.org/osrf/swarm/wiki/Install.md)
