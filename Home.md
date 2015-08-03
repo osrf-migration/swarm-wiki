@@ -39,6 +39,9 @@ Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first.
 
 # FAQ
 
+1. How do I know I've detected the lost person?
+> The camera sensor will detect an object with the name "lost_person".
+
 1. Will the size of 'world' be known? (I.e., does my robot team know the GPS-coordinates of the search space?)
 > Yes. The size of the world and GPS starting location will be provided.
 
