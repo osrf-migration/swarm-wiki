@@ -30,12 +30,12 @@ Two location functions are provided:
 
 # Example usage
 
-1. First, create a `swarm_controller2` directory:
+1. First, create a `swarm_controller3` directory:
 
-        mkdir swarm_controller2
-        cd swarm_controller2
+        mkdir swarm_controller3
+        cd swarm_controller3
 
-1. Download the example files into the `swarm_controller2` directory:
+1. Download the example files into the `swarm_controller3` directory:
 
         wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_3/CMakeLists.txt
         wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_3/TeamControllerPlugin.hh
@@ -57,3 +57,12 @@ Two location functions are provided:
         gzserver worlds/ground_simple_2.world --verbose
 
 You should see the following output:
+
+```
+Lat/Long/Alt[35.7753 -120.774 208.05]
+Search Area[35.7653 -120.784 : 35.7853 -120.764]
+Lat/Long/Alt[35.7753 -120.774 208.05]
+Search Area[35.7653 -120.784 : 35.7853 -120.764]
+Lat/Long/Alt[35.7753 -120.774 208.05]
+Search Area[35.7653 -120.784 : 35.7853 -120.764]
+```
