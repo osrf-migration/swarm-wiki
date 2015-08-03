@@ -18,6 +18,8 @@ Detailed instructions locate [here](http://gazebosim.org/tutorials?tut=install_u
 
 ## ns-3
 
+**ns-3 is not required yet.** 
+
 Follow the instructions described in the [ns-3 installation tutorial](https://www.nsnam.org/wiki/Installation).  You might find the [Bake installation method](https://www.nsnam.org/wiki/Installation#Installation_with_Bake) easiest.
 
 ## Swarm client library
