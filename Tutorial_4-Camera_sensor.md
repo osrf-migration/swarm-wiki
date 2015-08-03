@@ -44,5 +44,20 @@ The output from a robot's logical camera is accessed via:
 
         gzserver worlds/ground_simple_2.world --verbose
 
-You should see the following output:
+After about 12 seconds, you should see the following output:
 
+
+
+```
+#!c++
+
+ground_0 sees ground_1 at 0.848325 0.529476 0 0 -0 0.
+ground_0 sees ground_1 at 0.848854 0.528627 0 0 0 -0.
+ground_0 sees ground_1 at 0.849382 0.527778 0 0 -0 0.
+ground_0 sees ground_1 at 0.84991 0.526928 0 0 -0 0.
+ground_0 sees ground_1 at 0.850436 0.526078 0 0 0 -0.
+ground_0 sees ground_1 at 0.850962 0.525227 0 0 0 -0.
+ground_0 sees ground_1 at 0.851487 0.524376 0 0 -0 0.
+ground_0 sees ground_1 at 0.852011 0.523524 0 0 -0 0.
+
+```
