@@ -15,6 +15,20 @@ Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first.
 1. [GPS Sensor](https://bitbucket.org/osrf/swarm/wiki/Tutorial_3-GPS_sensor)
 1. [Camera Sensor](https://bitbucket.org/osrf/swarm/wiki/Tutorial_4-Camera_sensor)
 
+# Test worlds
+
+1. `gazebo worlds/fixed_simple_36.world`
+
+    This will run a sample world with 36 fixed wing aircraft.
+
+1. `gazebo worlds/rotor_simple_36.world`
+
+    This will run a sample world with 36 rotocraft.
+
+3. `gazebo worlds/ground_simple_36.world`
+
+    This will run a sample world with 36 ground vehicles.
+
 # Meetings
 
 1. [June 29th, Kickoff](https://bitbucket.org/osrf/swarm/wiki/Kickoff_meeting)
