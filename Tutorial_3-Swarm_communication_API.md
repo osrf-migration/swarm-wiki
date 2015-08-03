@@ -17,16 +17,16 @@ You can check the [C++ API](https://s3.amazonaws.com/osrf-distributions/swarm/ap
 
 # Simple communication among agents #
 
-1. First, create a `swarm_controller2` directory:
+1. First, create a `swarm_controller3` directory:
 
-        mkdir swarm_controller2
-        cd swarm_controller2
+        mkdir swarm_controller3
+        cd swarm_controller3
 
-1. Download the example files into the `swarm_controller2` directory:
+1. Download the example files into the `swarm_controller3` directory:
 
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_2/CMakeLists.txt
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_2/TeamControllerPlugin.hh
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_2/TeamControllerPlugin.cc
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_3/CMakeLists.txt
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_3/TeamControllerPlugin.hh
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_3/TeamControllerPlugin.cc
 
 1. Create a `build` directory:
 
