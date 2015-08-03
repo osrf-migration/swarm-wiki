@@ -2,7 +2,7 @@
 
 This tutorial will explain how to use the C++ Swarm client library for communication.
 
-We assume that you have already done the [installation step](https://bitbucket.org/osrf/swarm/wiki/Installation) and you know [how to write your own custom controller](https://bitbucket.org/osrf/swarm/wiki/Tutorial%20%231%20-%20How%20to%20create%20your%20Swarm%20controller).
+We assume that you have already done the [installation step](https://bitbucket.org/osrf/swarm/wiki/Install) and you know [how to write your own custom controller](https://bitbucket.org/osrf/swarm/wiki/Tutorial_1-How_to_create_your_Swarm_controller).
 
 # The communication API explained ###
 
