@@ -33,7 +33,7 @@ A Swarm controller is implemented as a model plugin attached to one of the robot
 
 # Test your first Swarm controller #
 
-Your first controller (*libSwarmControllerPlugin.so*) is ready to be tested. We assume that you have completed the [installation step](https://bitbucket.org/osrf/swarm/wiki/Installation) and your Swarm system is up and running.
+Your first controller (*libSwarmControllerPlugin.so*) is ready to be tested. We assume that you have completed the [installation step](https://bitbucket.org/osrf/swarm/wiki/Install) and your Swarm system is up and running.
 
 Run Gazebo with a basic Swarm world file:
 
