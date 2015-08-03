@@ -13,7 +13,7 @@ GPS in Gazebo uses a fixed frame of reference, and one or more sensors. The fixe
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
 
-A GPS sensor is attached to a robot, and reports its location by transforming the robot's metric pose to a latitude, longitude, and elevation. Each GPS sensor is defined by SDF:
+A GPS sensor is attached to a robot, and reports its location by transforming the robot's metric pose to a latitude, longitude, and altitude. Each GPS sensor is defined by SDF:
 
     <sensor name="gps" type="gps">
       <gps/>
