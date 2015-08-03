@@ -8,7 +8,7 @@ A logical camera is used to detect robots and other objects, such as a lost pers
 
 * [SDF specification](http://sdformat.org/spec?ver=1.5&elem=sensor#sensor_logical_camera)
 
-* [Gazebo API]()
+* [Gazebo Logical Camera API](http://osrf-distributions.s3.amazonaws.com/gazebo/api/6.1.0/classgazebo_1_1sensors_1_1LogicalCameraSensor.html)
 
 # The RobotPlugin API
 
