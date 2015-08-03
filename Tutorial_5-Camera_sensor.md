@@ -18,16 +18,16 @@ The output from a robot's logical camera is accessed via:
 
 # Example usage
 
-1. First, create a `swarm_controller4` directory:
+1. First, create a `swarm_controller5` directory:
 
-        mkdir swarm_controller4
-        cd swarm_controller4
+        mkdir swarm_controller5
+        cd swarm_controller5
 
 1. Download the example files into the `swarm_controller4` directory:
 
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_4/CMakeLists.txt
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_4/TeamControllerPlugin.hh
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_4/TeamControllerPlugin.cc
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_5/CMakeLists.txt
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_5/TeamControllerPlugin.hh
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_5/TeamControllerPlugin.cc
 
 1. Create a `build` directory:
 
