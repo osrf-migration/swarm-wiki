@@ -1,8 +1,8 @@
-# Overview #
+# Overview
 
 A Swarm controller is implemented as a model plugin attached to one of the robots under simulation. We have created a template that will help you writing your first controller.
 
-# Write your first Swarm controller #
+# Write your first Swarm controller
 
 1. First, create a `swarm_controller` directory:
 
