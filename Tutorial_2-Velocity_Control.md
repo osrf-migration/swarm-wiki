@@ -54,5 +54,5 @@ All the robot models respond to the following API functions:
 
         gazebo worlds/ground_simple_2.world --verbose
 
-You should see the robots moving in a circle.
+You should see two robots moving in a circle.
 
