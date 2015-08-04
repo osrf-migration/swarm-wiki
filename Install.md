@@ -8,7 +8,7 @@ The Swarm setup is composed of a [Gazebo robot simulator](http://gazebosim.org),
 
 1. Ubuntu 14.04, or later, 64-bit
 
-1. `sudo apt-get install build-essential cmake mercurial libprotoc-dev protobuf-compiler ruby libignition-transport-dev`
+1. `sudo apt-get install build-essential cmake mercurial libprotoc-dev protobuf-compiler ruby libignition-transport-dev libignition-math2-dev`
 
 ## Gazebo
 
