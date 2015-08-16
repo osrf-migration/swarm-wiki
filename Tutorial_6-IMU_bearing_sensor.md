@@ -19,9 +19,9 @@ A compass sensor returns the angle (radian) between the true North and the senso
 
 Two functions are provided:
 
-1. [`RobotPlugin::Imu()`](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/classswarm_1_1RobotPlugin.html#a3d85d51691c5dd8e6b4ce7755dbe48d4) : Retrieves the robot's velocities and relative position from its IMU sensor.
+1. [`RobotPlugin::Imu()`](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/classswarm_1_1RobotPlugin.html#a89bf23ca9206655d8197e2d90a451136) : Retrieves the robot's velocities and relative position from its IMU sensor.
 
-1. [`RobotPlugin::Bearing()`](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/classswarm_1_1RobotPlugin.html#aa670d09bce9e107693b81f8445547871) Get the robot's absolute bearing.
+1. [`RobotPlugin::Bearing()`](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/classswarm_1_1RobotPlugin.html#a0e72ca8094bb9c5b7926e5df4ff98c46) Get the robot's absolute bearing.
 
 # Example usage
 
