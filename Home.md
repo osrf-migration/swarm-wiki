@@ -15,8 +15,13 @@ Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first.
 1. [Swarm communication API](https://bitbucket.org/osrf/swarm/wiki/Tutorial_3-Swarm_communication_API)
 1. [GPS Sensor](https://bitbucket.org/osrf/swarm/wiki/Tutorial_4-GPS_sensor)
 1. [Camera Sensor](https://bitbucket.org/osrf/swarm/wiki/Tutorial_5-Camera_sensor)
+1. [IMU and compass Sensors](https://bitbucket.org/osrf/swarm/wiki/Tutorial_6-IMU_bearing_sensor)
 
 # Test worlds
+
+1. `gazebo worlds/ground_simple_2.world`
+
+    This will run a sample world with 2 ground vehicles.
 
 1. `gazebo worlds/fixed_simple_36.world`
 
