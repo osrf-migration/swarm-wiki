@@ -29,9 +29,9 @@ Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first.
 
 1. `gazebo worlds/rotor_simple_36.world`
 
-    This will run a sample world with 36 rotocraft.
+    This will run a sample world with 36 rotorcraft.
 
-3. `gazebo worlds/ground_simple_36.world`
+1. `gazebo worlds/ground_simple_36.world`
 
     This will run a sample world with 36 ground vehicles.
 
