@@ -4,20 +4,24 @@ This tutorial will describe the IMU and compass sensors, and how to access IMU a
 
 # IMU
 
-An IMU uses a reference frame relative to the vehicle. The sensor is attached to a robot, and reports its linear (m/s) and angular velocity (rad/s), as well as the orientation relative to a reference pose (rad). In the Swarm project, the reference pose was initialized when the robot was spawned. Each IMU sensor is defined by SDF:
+An IMU uses a reference frame relative to the vehicle. The sensor is attached to a robot, and reports its linear (m/s) and angular velocity (radian/s), as well as the orientation relative to a reference pose (radian). In the Swarm project, the reference pose was initialized when the robot was spawned. Each IMU sensor is defined by SDF:
 
     <sensor name="imu" type="imu">
       <imu/>
       <always_on>1</always_on>
     </sensor>
 
+# Compass
+
+A compass sensor returns the angle (radian) between the true North and the sensor. If the compass is facing North the bearing is 0. The bearing increments clockwise up to 2*PI radians. For example, a vehicle facing East would have a bearing of PI/2 radians. Note that in Gazebo the North is aligned with the +Y axis.
+
 # The RobotPlugin API
 
 Two functions are provided:
 
-1. [`RobotPlugin::Imu()`](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/classswarm_1_1RobotPlugin.html#a3d85d51691c5dd8e6b4ce7755dbe48d4) : Retrieves the robot's current pose from its GPS sensor.
+1. [`RobotPlugin::Imu()`](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/classswarm_1_1RobotPlugin.html#a3d85d51691c5dd8e6b4ce7755dbe48d4) : Retrieves the robot's velocities and relative position from its IMU sensor.
 
-1. [`RobotPlugin::Bearing()`](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/classswarm_1_1RobotPlugin.html#aa670d09bce9e107693b81f8445547871) Get the search area, in GPS coordinates.
+1. [`RobotPlugin::Bearing()`](https://s3.amazonaws.com/osrf-distributions/swarm/api/0.1.0/classswarm_1_1RobotPlugin.html#aa670d09bce9e107693b81f8445547871) Get the robot's absolute bearing.
 
 # Example usage
 
