@@ -4,7 +4,7 @@ This tutorial will describe the IMU and compass sensors, and how to access IMU a
 
 # IMU
 
-An IMU uses a reference frame relative to the vehicle. The sensor is attached to a robot, and reports its linear (m/s) and angular velocity (radian/s), as well as the orientation relative to a reference pose (radian). In the Swarm project, the reference pose was initialized when the robot was spawned. Each IMU sensor is defined by SDF:
+An IMU uses a reference frame relative to the vehicle. The sensor is attached to a robot, and reports its linear (m/s) and angular velocity (radian/s), as well as the orientation relative to a reference pose. In the Swarm project, the reference pose was initialized when the robot was spawned. Each IMU sensor is defined by SDF:
 
     <sensor name="imu" type="imu">
       <imu/>
@@ -13,7 +13,7 @@ An IMU uses a reference frame relative to the vehicle. The sensor is attached to
 
 # Compass
 
-A compass sensor returns the angle (radian) between the true North and the sensor. If the compass is facing North the bearing is 0. The bearing increments clockwise up to 2*PI radians. For example, a vehicle facing East would have a bearing of PI/2 radians. Note that in Gazebo the North is aligned with the +Y axis.
+A compass sensor returns the angle between the true North and the sensor. If the compass is facing North the bearing is 0. The bearing increments clockwise up to 2*PI radians. For example, a vehicle facing East would have a bearing of PI/2 radians. Note that in Gazebo the North is aligned with the +Y axis.
 
 # The RobotPlugin API
 
