@@ -16,6 +16,7 @@ Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first.
 1. [GPS Sensor](https://bitbucket.org/osrf/swarm/wiki/Tutorial_4-GPS_sensor)
 1. [Camera Sensor](https://bitbucket.org/osrf/swarm/wiki/Tutorial_5-Camera_sensor)
 1. [IMU and compass Sensors](https://bitbucket.org/osrf/swarm/wiki/Tutorial_6-IMU_bearing_sensor)
+1. [Finding the person and reporting success](https://bitbucket.org/osrf/swarm/wiki/Tutorial_7-Find_person)
 
 # Test worlds
 
