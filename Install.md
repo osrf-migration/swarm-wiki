@@ -8,6 +8,14 @@ The Swarm setup is composed of a [Gazebo robot simulator](http://gazebosim.org),
 
 1. Ubuntu 14.04, or later, 64-bit
 
+1. Setup packages.osrfoundation.org
+
+    1. ```sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list'```
+
+    1. `wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -`
+
+    1. sudo apt-get update
+
 1. `sudo apt-get install build-essential cmake mercurial libprotoc-dev protobuf-compiler ruby libignition-transport-dev libignition-math2-dev`
 
 ## Gazebo
