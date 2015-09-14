@@ -76,6 +76,7 @@ The key parts of this controller are:
 
 * In the `TeamControllerPlugin::Load()` method (which is called once during initialization before simulation starts) subscribe to messages that are sent to the `kBooPort` port.
 
+        #!c++
         void TeamControllerPlugin::Load(sdf::ElementPtr _sdf)
         {
           // Sign up to receive unicast and broadcast messages
@@ -86,6 +87,7 @@ The key parts of this controller are:
 
 * **Holler when you found the person:**  We check on every timestep whether we see the person, using the code below, which is part of the `TeamControllerPlugin::Update()` method.  Note that we get the list of objects from the logical camera using the `RobotPlugin::Image()` method, then if we found the person (by matching against the name `"lost_person"`), we call `RobotPlugin::CameraToWorld()` to convert the person's pose into the world frame.  Then we build the specially formatted `FOUND` message and broadcast on the `kBooPort` port.
 
+        #!c++
         // Do we see the lost person?
         // Get the camera information
         ImageData img;
@@ -98,13 +100,7 @@ The key parts of this controller are:
               // Convert to the world frame.
               ignition::math::Pose3d personInWorld =
                 this->CameraToWorld(obj.second);
-              // Tell everybody about ivoid TeamControllerPlugin::Load(sdf::ElementPtr _sdf)
-{
-  // Sign up to receive unicast and broadcast messages
-  this->Bind(&TeamControllerPlugin::OnDataReceived, this, this->Host(),
-    this->kBooPort);
-}
-t.
+              // Tell everybody about it.
               std::stringstream successMsg;
               successMsg << "FOUND " << personInWorld.Pos() << " " <<
                 _info.simTime.Double();
@@ -120,6 +116,7 @@ t.
 
 * **Random walk:** We use a simple state machine, implemented in the code below, which is part of the `TeamControllerPlugin::Update()` method.  We're always moving forward at 1m/s.  Every 10s, we pick a new random yaw velocity in the range [-0.5rad/s, 0.5rad/s].  After 2.5s (10/4), we set the yaw velocity back to zero to drive straight.  Then 7.5s later (the remainder of the 10s period), we repeat the procedure.  Note that we remember the last computed commands and resend them every cycle; this is needed to avoid having the robot stop moving.
 
+        #!c++
         // Do a random walk, changing direction every once in a while.
         gazebo::common::Time changePeriod(10, 0);
       
@@ -161,6 +158,7 @@ t.
 
 * **Repeat everything you hear:** We implement a relay-everything comms strategy in `TeamControllerPlugin::OnDataReceived()`, which will be called on each received message.  To avoid infinite loops (which could happen even with a single robot, because you hear your own messages), we keep a flat list of the payloads of all previously sent messages, and decide whether to relay an incoming message by first comparing it to each previously sent message.
 
+        #!c++
         void TeamControllerPlugin::OnDataReceived(const std::string &_srcAddress,
             const std::string &_data)
         {
