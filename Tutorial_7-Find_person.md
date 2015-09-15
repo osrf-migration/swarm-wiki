@@ -1,5 +1,3 @@
-# UNDER CONSTRUCTION
-
 # Overview
 
 This tutorial demonstrates a complete (though incredibly naive) solution to the lost-person problem.  It's intended as an example and perhaps a baseline against which to compare more intelligent solutions.
