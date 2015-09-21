@@ -68,7 +68,7 @@ Follow the instructions described in the [ns-3 installation tutorial](https://ww
 
 In the previous step we installed the Swarm client library `libSwarmRobotPlugin.so` and a client controller example `libTeamControllerPlugin.so`. Run the following command to test your installation:
 
-        gzserver --verbose worlds/ground_simple_2.world
+       gzserver --verbose worlds/ground_simple_2.world
 
 You should see the following output confirming that your installation succeeded, similar to:
 
