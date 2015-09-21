@@ -2,6 +2,7 @@
 
 This tutorial demonstrates a complete (though incredibly naive) solution to the lost-person problem.  It's intended as an example and perhaps a baseline against which to compare more intelligent solutions.
 
+## Prerequisites
 First, be sure to [install](https://bitbucket.org/osrf/swarm/wiki/Install.md) the swarm code.
 
 ## Strategy
