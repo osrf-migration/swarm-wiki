@@ -20,7 +20,7 @@ The Swarm setup is composed of a [Gazebo robot simulator](http://gazebosim.org),
 
 ## Gazebo
 
-Detailed instructions locate [here](http://gazebosim.org/tutorials?tut=install_ubuntu&ver=6.0&cat=install), single line install follows.
+Detailed instructions located [here](http://gazebosim.org/tutorials?tut=install_ubuntu&ver=6.0&cat=install), single line install follows.
 
 1. `wget -O /tmp/gazebo6_install.sh http://osrf-distributions.s3.amazonaws.com/gazebo/gazebo6_install.sh; sudo sh /tmp/gazebo6_install.sh`
 
