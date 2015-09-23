@@ -77,7 +77,9 @@ If the BOO receives the message and the reported position is within the configur
 
 # How it works
 
-The key parts of this controller are:
+The controller code (`TeamControllerPlugin.cc` and `TeamControllerPlugin.hh`) was compiled into a plugin library, called `libTeamControllerPlugin.so`, which is installed to `/usr/lib/x86_64-linux-gnu/libTeamControllerPlugin.so` (or a similar location).
+
+The key parts of this controller code are:
 
 * In the `TeamControllerPlugin::Load()` method (which is called once during initialization before simulation starts) subscribe to messages that are sent to the `kBooPort` port.
 
