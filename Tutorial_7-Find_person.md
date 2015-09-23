@@ -38,11 +38,11 @@ Having said that, it will succeed sometimes, in very simple worlds.
         mkdir swarm_controller7
         cd swarm_controller7
 
-1. Download the example files into the `swarm_controller7` directory (**TODO: update these links after [PR24](https://bitbucket.org/osrf/swarm/pull-requests/24/tutorial_7) is merged**)
+1. Download the example files into the `swarm_controller7` directory:
 
-        wget https://bitbucket.org/osrf/swarm/raw/tutorial_7/tutorials/tutorial_7/CMakeLists.txt
-        wget https://bitbucket.org/osrf/swarm/raw/tutorial_7/tutorials/tutorial_7/TeamControllerPlugin.hh
-        wget https://bitbucket.org/osrf/swarm/raw/tutorial_7/tutorials/tutorial_7/TeamControllerPlugin.cc
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_7/CMakeLists.txt
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_7/TeamControllerPlugin.hh
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_7/TeamControllerPlugin.cc
 
 1. Create a `build` directory:
 
