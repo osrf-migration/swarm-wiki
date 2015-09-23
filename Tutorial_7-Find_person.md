@@ -5,7 +5,7 @@ This tutorial demonstrates a complete (though incredibly naive) solution to the 
 Recall that the goal is to send a specially formatted message containing the current location of the lost person (which is represented graphically by a moving gray cube) back to the Base Of Operations (BOO), which is a special immobile "robot" (and is represented by a fixed gray cube).
 
 ## Prerequisites
-First, be sure to [install](https://bitbucket.org/osrf/swarm/wiki/Install.md) the swarm code.
+First, be sure to [install](https://bitbucket.org/osrf/swarm/wiki/Install.md) the swarm code.  When you're done installing, if you started a simulation to test things out, be sure to quit the simulation (with Ctrl-C in the terminal where you started it).
 
 ## Strategy
 
