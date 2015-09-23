@@ -74,16 +74,14 @@ You should see the following output confirming that your installation succeeded,
 
 ```
 #!python
-[Msg] BrokerPlugin::ReadSwarmFromSDF: 2 swarm members found
-[Msg] [192.168.2.1] Neighbors:
-[Msg] 	192.168.2.2
-[Msg] [192.168.2.1] search area: 35.7653 35.7853 -120.784 -120.764
-[Msg] [192.168.2.1] lat long alt: 35.7753 -120.774 208.05
-[Msg] [192.168.2.2] Neighbors:
-[Msg] 	192.168.2.1
-[Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.1]
-[Msg] 	Data: [Unicast data]
-[Msg] ---
+[Msg] Waiting for master.
+[Msg] Connected to gazebo master @ http://127.0.0.1:11345
+[Msg] Publicized address: 172.23.2.154
+[Msg] BrokerPlugin::ReadSwarmFromSDF: 3 swarm members found
+[Msg] [192.168.3.1] Neighbors:
+[Msg] 	192.168.3.2
+[Msg] 	boo
+[Msg] [192.168.3.2] Neighbors:
+[Msg] 	192.168.3.1
+[Msg] 	boo
 ```
