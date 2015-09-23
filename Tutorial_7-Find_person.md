@@ -2,6 +2,8 @@
 
 This tutorial demonstrates a complete (though incredibly naive) solution to the lost-person problem.  It's intended as an example and perhaps a baseline against which to compare more intelligent solutions.
 
+Recall that the goal is to send a specially formatted message containing the current location of the lost person (which is represented graphically by a moving gray cube) back to the Base Of Operations (BOO), which is a special immobile "robot" (and is represented by a fixed gray cube).
+
 ## Prerequisites
 First, be sure to [install](https://bitbucket.org/osrf/swarm/wiki/Install.md) the swarm code.
 
@@ -59,7 +61,9 @@ Having said that, it will succeed sometimes, in very simple worlds.
 
 ## Expected results
 
-You should see 4 ground vehicles wondering around the world randomly.  If one of them sees the lost person (this will usually happen very quickly or not at all), it will broadcast that fact, including the perceived position and time, also printing a message like this:
+You should see 4 ground vehicles wondering around the world randomly.  You should also see two gray cubes.  The one fixed in place is the BOO and the one that is moving around is the lost person.
+
+If one of the robots sees the lost person (this will usually happen very quickly or not at all), it will broadcast that fact, including the perceived position and time, also printing a message like this:
 
     [192.168.2.2] I found the lost person.  Sending: FOUND 20 21.61 -0.2889 8.06
 
@@ -80,7 +84,7 @@ The key parts of this controller are:
         #!c++
         void TeamControllerPlugin::Load(sdf::ElementPtr _sdf)
         {
-          // Sign up to receive unicast and broadcast messages
+          // Subscribe to receive unicast and broadcast messages
           this->Bind(&TeamControllerPlugin::OnDataReceived, this, this->Host(),
             this->kBooPort);
         }
@@ -154,8 +158,6 @@ The key parts of this controller are:
           this->SetLinearVelocity(this->lastLinVel);
           this->SetAngularVelocity(this->lastAngVel);
         }
-        break;
-      }
 
 * **Repeat everything you hear:** We implement a relay-everything comms strategy in `TeamControllerPlugin::OnDataReceived()`, which will be called on each received message.  To avoid infinite loops (which could happen even with a single robot, because you hear your own messages), we keep a flat list of the payloads of all previously sent messages, and decide whether to relay an incoming message by first comparing it to each previously sent message.
 
