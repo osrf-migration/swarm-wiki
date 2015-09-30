@@ -19,7 +19,7 @@ Enter the Access Key and Secret Key. Leave other fields blank, do not test the s
 ## List directory contents
 
 ```
-s3cmd list s3://osrf-swarm/<team>
+s3cmd ls s3://osrf-swarm/<team>
 ```
 
 ## Upload a log file
