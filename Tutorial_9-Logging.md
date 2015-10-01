@@ -12,7 +12,7 @@ A Swarm log file is composed by a collection of log entries. Each log entry cont
 
 * **time**: Simulation time at the moment of capturing this log entry.
 
-* **sensors**: Contains the observed sensor measurements received by the RobotControllerPlugin during a cycle. E.g.: GPS, IMU, compass, camera, battery
+* **sensors**: Contains the observed sensor measurements received by the RobotControllerPlugin during a cycle. E.g.: GPS, IMU, compass, camera, battery.
 
 * **actions**: Contains the actions sent to the vehicle by the team's controller plugin. E.g.: Apply a linear velocity of 1 m/s and an angular velocity of 0.5 rad/s.
 
