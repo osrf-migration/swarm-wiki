@@ -8,7 +8,7 @@ Gazebo already has logging capabilities but are slightly different from the Swar
 
 A Swarm log file is composed by a collection of log entries. Each log entry contains the following optional fields:
 
-* **id** : Identity of the entity that wrote this log entry. In our case, the `id` are the addresses of the robots, or "boo", or "broker_plugin". 
+* **id** : Identity of the entity that wrote this log entry. In our case, the **id** is the address of the robot, or "boo", or "broker_plugin". 
 
 * **time**: Simulation time at the moment of capturing this log entry.
 
