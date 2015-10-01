@@ -41,13 +41,79 @@ After some time, type CTRL-C for stopping your simulation.
 
 A new Swarm log file has been created under `~/.swarm/logs/<timestamp>`. Go to the content of the newly created subdirectory. E.g.:
 
-`cd .swarm/log/2015-09-30T17:35:42.085166`
+`cd ~/.swarm/log/2015-09-30T17:35:42.085166`
 
 Here, you should see your Swarm log file named `swarm.log`.
 
 # How to introspect or parse a Swarm log file
 
-A Swarm log file uses a binary format but you can use the `swarmlog` command line tool for introspecting the log in a human readable format.
+A Swarm log file uses binary codification but you can use the `swarmlog` command line tool for introspecting the log in a human readable format.
+
+Type the following command for iterating through the list of log entries:
+
+`swarmlog -s -f swarm.log`
+
+You should the following output in your terminal:
+
+```
+#!python
+
+id: "192.168.3.1"
+time: 0.01
+sensors {
+  gps {
+    latitude: 0
+    longitude: 0
+    altitude: 0
+  }
+  imu {
+    linvel {
+      x: 0
+      y: 0
+      z: 0
+    }
+    angvel {
+      x: 0
+      y: 0
+      z: 0
+    }
+    orientation {
+      x: 0
+      y: 0
+      z: 0
+      w: 1
+    }
+  }
+  bearing: 0
+  image {
+  }
+  battery_capacity: 110000
+}
+actions {
+  linvel {
+    x: 0
+    y: 0
+    z: 0
+  }
+  angvel {
+    x: 0
+    y: 0
+    z: 0
+  }
+}
+incoming_msgs {
+}
+```
+
+You can press space for jumping to the next log entry or `q` to quit.
+
+Additionally, you can output the whole content of a Swam log file to screen:
+
+`swarmlog -e -f swarm.log`
+
+Or you can redirect the output to a file:
+
+`swarmlog -e -f swarm.log > swarm.log.txt`
 
 
 
