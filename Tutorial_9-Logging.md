@@ -35,7 +35,7 @@ A log entry is declared as a Google Protocol Buffer. You can consult the declara
 
 Swarm logging is disabled by default. If you want to enable you have to set the environment variable `SWARM_LOG` to `1` and launch gzserver/gazebo:
 
-SWARM_LOG=1 gzserver worlds/ground_simple_2.world --verbose
+`SWARM_LOG=1 gzserver worlds/ground_simple_2.world --verbose`
 
 After some time, type CTRL-C for stopping your simulation.
 
