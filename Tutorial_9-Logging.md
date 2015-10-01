@@ -6,7 +6,7 @@ Gazebo already has logging capabilities but are slightly different from the Swar
 
 # Log's content
 
-A Swarm log file contains a collection of log entries. Each log entry contains the following fields:
+A Swarm log file is composed by a collection of log entries. Each log entry contains the following optional fields:
 
 * **id** : Identity of the entity that wrote this log entry. In our case, the `id` are the addresses of the robots, or "boo", or "broker_plugin". 
 
