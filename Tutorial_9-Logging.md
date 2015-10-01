@@ -121,7 +121,7 @@ We have created a header file `LogParser.hh` that can help you if you need to pa
 
 * *bool Next(msgs::LogEntry &_entry)*: Read the next log entry from the log. If the return value is `true`, a new log entry was parsed successfully. You can read about the [Google Protocol Buffers C++ API](https://developers.google.com/protocol-buffers/docs/cpptutorial) for learning how to access the individual fields of the log entry in case you are not familiar with Protocol Buffers. If you are at the end of the log file or an unexpected problem happened while parsing the next entry, the function will return `false`.
 
-We used `LogParser.hh` for writing `swarmlog`. You can also read the `[swarmlog.cc]()` source code as another log parsing example.
+We used `LogParser.hh` for writing `swarmlog`. You can also read the [`swarmlog.cc`]() source code as another log parsing example.
 
 
 
