@@ -31,11 +31,23 @@ A Swarm log file contains a collection of log entries. Each log entry contains t
 
 A log entry is declared as a Google Protocol Buffer. You can consult the declaration [here]().
 
-# How to run Gazebo with Swarm logging enabled.
+# How to run Gazebo with Swarm logging enabled
 
+Swarm logging is disabled by default. If you want to enable you have to set the environment variable `SWARM_LOG` to `1` and launch gzserver/gazebo:
 
+SWARM_LOG=1 gzserver worlds/ground_simple_2.world --verbose
 
-# How to parse a Swarm log file.
+After some time, type CTRL-C for stopping your simulation.
+
+A new Swarm log file has been created under `~/.swarm/logs/<timestamp>`. Go to the content of the newly created subdirectory. E.g.:
+
+`cd .swarm/log/2015-09-30T17:35:42.085166`
+
+Here, you should see your Swarm log file named `swarm.log`.
+
+# How to introspect or parse a Swarm log file
+
+A Swarm log file uses a binary format but you can use the `swarmlog` command line tool for introspecting the log in a human readable format.
 
 
 
