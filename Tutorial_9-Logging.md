@@ -115,6 +115,14 @@ Or you can redirect the output to a file:
 
 `swarmlog -e -f swarm.log > swarm.log.txt`
 
+We have created a header file `LogParser.hh` that can help you if you need to parse a log file programmatically:
+
+*`LogParser(const std::string &_filename)`: Class constructor that accepts the full path to the Swarm log file as a parameter.
+
+*`bool Next(msgs::LogEntry &_entry):` Read the next log entry from the log. If the return value is `true`, a new log entry was parsed successfully. You can read about Google Protocol Buffers for learning how to access the individual fields of the log entry. If you are at the end of the log file or an unexpected problem happened while parsing the next entry, the function will return `false`.
+
+We used `LogParser.hh` for writing `swarmlog`. You can also read the `swarmlog.cc` source code as another example.
+
 
 
 
