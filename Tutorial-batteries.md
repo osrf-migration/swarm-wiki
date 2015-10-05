@@ -1,5 +1,7 @@
 Each vehicle begins with a starting battery capacity. This capacity lowers as time progresses. A vehicle may recharge its battery by stopping (zero velocity) within 100 meters of the base of operations (BOO). Ground vehicles act as recharge stations for rotorcraft. A battery recharges four times faster than it discharges.
 
+Motion, sensor updates, and communication will stop once a battery completely depletes. However, the vehicle's plugin code will still execute.
+
 ##Battery Functions
 
 The following functions allow  plugin to get information about the battery.
