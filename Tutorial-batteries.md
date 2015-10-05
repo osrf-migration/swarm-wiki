@@ -6,11 +6,11 @@ Motion, sensor updates, and communication will stop once a battery completely de
 
 The following functions allow  plugin to get information about the battery.
 
-  1. BatteryStartCapacity() Starting battery capacity (mAh).
-  2. BatteryCapacity() Current battery capacity (mAh).
-  3. BatteryConsumption() Battery consumption (mA).
-  4. BatteryConsumptionFactor() Factor applied to battery consumption to account for additional loss.
-  5. ExpectedBatteryLife() Battery life in seconds, based on the current capacity and consumption.
+  1. `BatteryStartCapacity()` Starting battery capacity (mAh).
+  2. `BatteryCapacity()` Current battery capacity (mAh).
+  3. `BatteryConsumption()` Battery consumption (mA).
+  4. `BatteryConsumptionFactor()` Factor applied to battery consumption to account for additional loss.
+  5. `ExpectedBatteryLife()` Battery life in seconds, based on the current capacity and consumption.
 
 ##Battery definition
 
