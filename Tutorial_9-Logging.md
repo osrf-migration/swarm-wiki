@@ -39,13 +39,13 @@ Swarm logging is disabled by default. If you want to enable you have to set the 
 
 After some time, type CTRL-C for stopping your simulation.
 
-A new Swarm log file has been created under `~/.swarm/logs/<timestamp>`. Go to the content of the newly created subdirectory. E.g.:
+A new Swarm log file has been created under `~/.swarm/log/<timestamp>`. Go to the content of the newly created subdirectory. E.g.:
 
 `cd ~/.swarm/log/2015-09-30T17:35:42.085166`
 
 Here, you should see your Swarm log file named `swarm.log`.
 
-A new Gazebo log file has also been created in `~/.gazebo/logs/<timestamp>/gzserver/state.log`. This log file and the `swarm.log` file should be saved. See the [tutorial on uploading log file](https://bitbucket.org/osrf/swarm/wiki/Tutorial_8-Upload_log_files).
+A new Gazebo log file has also been created in `~/.gazebo/log/<timestamp>/gzserver/state.log`. This log file and the `swarm.log` file should be saved. See the [tutorial on uploading log file](https://bitbucket.org/osrf/swarm/wiki/Tutorial_8-Upload_log_files).
 
 # How to introspect or parse a Swarm log file
 
