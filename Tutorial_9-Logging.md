@@ -35,7 +35,7 @@ A log entry is declared as a Google Protocol Buffer. You can consult the declara
 
 Swarm logging is disabled by default. If you want to enable you have to set the environment variable `SWARM_LOG` to `1` and launch gzserver/gazebo:
 
-`SWARM_LOG=1 gzserver worlds/ground_simple_2.world --verbose`
+`SWARM_LOG=1 gzserver worlds/ground_simple_2.world -r --verbose`
 
 After some time, type CTRL-C for stopping your simulation.
 
@@ -44,6 +44,8 @@ A new Swarm log file has been created under `~/.swarm/logs/<timestamp>`. Go to t
 `cd ~/.swarm/log/2015-09-30T17:35:42.085166`
 
 Here, you should see your Swarm log file named `swarm.log`.
+
+A new Gazebo log file has also been created in `~/.gazebo/logs/<timestamp>/gzserver/state.log`. This log file and the `swarm.log` file should be saved. See the [tutorial on uploading log file]().
 
 # How to introspect or parse a Swarm log file
 
