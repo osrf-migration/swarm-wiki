@@ -45,7 +45,7 @@ A new Swarm log file has been created under `~/.swarm/logs/<timestamp>`. Go to t
 
 Here, you should see your Swarm log file named `swarm.log`.
 
-A new Gazebo log file has also been created in `~/.gazebo/logs/<timestamp>/gzserver/state.log`. This log file and the `swarm.log` file should be saved. See the [tutorial on uploading log file]().
+A new Gazebo log file has also been created in `~/.gazebo/logs/<timestamp>/gzserver/state.log`. This log file and the `swarm.log` file should be saved. See the [tutorial on uploading log file](https://bitbucket.org/osrf/swarm/wiki/Tutorial_8-Upload_log_files).
 
 # How to introspect or parse a Swarm log file
 
