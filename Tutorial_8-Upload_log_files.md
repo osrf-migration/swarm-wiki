@@ -39,3 +39,5 @@ s3cmd ls s3://osrf-swarm/<team>
 s3cmd sync <your_file> s3://osrf-swarm/<team>/<timestamp>
 ```
 
+In general, you should upload both `~/.gazebo/log/<timestamp>/gzserver/state.log` and `~/.swarm/log/<timestamp>/swarm.log`.  See the [tutorial on logging](https://bitbucket.org/osrf/swarm/wiki/Tutorial_9-Logging) for more information.
+
