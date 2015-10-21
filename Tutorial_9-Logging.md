@@ -154,7 +154,21 @@ You can verify this log file by replaying it in Gazebo:
 gazebo -p ~/.gazebo/log/2013-07-25T07\:29\:05.122275/gzserver/state.log
 ```
 
+You can explore the command `gz log` for introspecting Gazebo log files. E.g.:
 
+
+```
+#!python
+
+gz log --info -f ~/.gazebo/log/2013-07-25T07\:29\:05.122275/gzserver/state.log
+
+Log Version:    1.0
+Gazebo Version: 6.0.0
+Random Seed:    27838
+Size:           341.608 KB
+Encoding:       zlib
+
+```
 
 
 
