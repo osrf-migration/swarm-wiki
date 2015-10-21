@@ -241,13 +241,15 @@ Finally, the following snippet shows the callback associated to the incoming mes
 
 //////////////////////////////////////////////////
 void TeamControllerPlugin::OnDataReceived(const std::string &_srcAddress,
+    const std::string &_dstAddress, const uint32_t _dstPort,
     const std::string &_data)
 {
   gzmsg << "---" << std::endl;
   gzmsg << "[" << this->Host() << "] New message received" << std::endl;
   gzmsg << "\tFrom: [" << _srcAddress << "]" << std::endl;
+  gzmsg << "\tTo: [" << _dstAddress << ":" << _dstPort << "]" << std::endl;
   gzmsg << "\tData: [" << _data << "]" << std::endl;
 }
 ```
 
-This is the callback that we specified when we used the `Bind()` function. As you can see in the previous snippet, the address of the sender is available as a parameter, as wells as the data in `std::string` format. Note that a controller will receive its own messages when sending broadcast and multicast messages.
+This is the callback that we specified when we used the `Bind()` function. As you can see in the previous snippet, the address of the sender is available as a parameter, as wells as the destination address, destination port, and data.
