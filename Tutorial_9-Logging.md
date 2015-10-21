@@ -16,11 +16,13 @@ A Swarm log file is composed by a collection of log entries. Each log entry cont
 
 * **actions**: Contains the actions sent to the vehicle by the team's controller plugin. E.g.: Apply a linear velocity of 1 m/s and an angular velocity of 0.5 rad/s.
 
-* **incoming_msgs**: Contains the list of messages received by the entity **id** during a specific **time**. E.g.:
+* **incoming_msgs**: Contains the list of messages sent during a specific **time**. E.g.:
 
-     * A message from `192.168.3.2` to `192.168.3.1:8000` of `100` bytes was received successfully.
-     * A message from `192.168.3.3` to `broadcast:8000` of size `20` bytes was received successfully.
-     * A message from `192.168.3.4` to `192.168.3.1:8000` of size `40` bytes was dropped.
+     * A message from `192.168.3.2` to `192.168.3.1:8000` of `100` bytes was sent:
+         * 192.168.3.1 received the message.
+     * A message from `192.168.3.3` to `broadcast:8000` of size `20` bytes was sent:
+         * 192.168.3.1 dropped the message.
+         * 192.168.3.2 received the message.
 
 * **visibility**: Contains a connectivity map of the entire swarm. For each pair of robots, we store the visibility status of the two robots:
 
