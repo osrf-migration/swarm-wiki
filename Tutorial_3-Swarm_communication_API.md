@@ -58,56 +58,42 @@ http://gazebosim.org
 [Msg] Connected to gazebo master @ http://127.0.0.1:11345
 [Msg] Publicized address: 172.23.1.7
 [Msg] BrokerPlugin::ReadSwarmFromSDF: 2 swarm members found
-[Msg] [192.168.2.1] Neighbors:
-[Msg] 	192.168.2.2
-[Msg] [192.168.2.2] Neighbors:
-[Msg] 	192.168.2.1
 [Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.1]
+[Msg] [192.168.3.1] New message received
+[Msg] 	From: [192.168.3.2]
+[Msg] 	To: [192.168.3.1:4100]
 [Msg] 	Data: [Unicast data]
 [Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.1]
+[Msg] [192.168.3.1] New message received
+[Msg] 	From: [192.168.3.2]
+[Msg] 	To: [broadcast:4100]
 [Msg] 	Data: [Broadcast data]
 [Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.1]
-[Msg] 	Data: [Broadcast data]
-[Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.1]
-[Msg] 	Data: [Multicast data]
-[Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.1]
-[Msg] 	Data: [Multicast data]
-[Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.2]
+[Msg] [192.168.3.2] New message received
+[Msg] 	From: [192.168.3.1]
+[Msg] 	To: [192.168.3.2:4100]
 [Msg] 	Data: [Unicast data]
 [Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.2]
+[Msg] [192.168.3.2] New message received
+[Msg] 	From: [192.168.3.1]
+[Msg] 	To: [broadcast:4100]
 [Msg] 	Data: [Broadcast data]
 [Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.2]
-[Msg] 	Data: [Broadcast data]
-[Msg] ---
-[Msg] [192.168.2.1] New message received
-[Msg] 	From: [192.168.2.2]
+[Msg] [192.168.3.1] New message received
+[Msg] 	From: [192.168.3.2]
+[Msg] 	To: [multicast:4100]
 [Msg] 	Data: [Multicast data]
 [Msg] ---
-[Msg] [192.168.2.2] New message received
-[Msg] 	From: [192.168.2.2]
+[Msg] [192.168.3.2] New message received
+[Msg] 	From: [192.168.3.1]
+[Msg] 	To: [multicast:4100]
 [Msg] 	Data: [Multicast data]
-
+[Msg] ---
 ```
 
 # Walkthrough #
 
-In this example, we are loading two vehicles with addresses `192.168.2.1` and `192.168.2.2`. If you open the world file distributed with your Swarm client library (`/usr/share/gazebo-6.0/worlds/ground_simple_2.world`), you will be able to see the model blocks and how the address and other parameters are specified:
+In this example, we are loading two vehicles with addresses `192.168.3.1` and `192.168.3.2`. If you open the world file distributed with your Swarm client library (`/usr/share/gazebo-6.0/worlds/ground_simple_2.world`), you will be able to see the model blocks and how the address and other parameters are specified:
 
 ```
 #!xml
@@ -120,7 +106,7 @@ In this example, we are loading two vehicles with addresses `192.168.2.1` and `1
   <!-- Load the plugin to control this robot -->
   <plugin name="swarm_controller_0" filename="libTeamControllerPlugin.so">
     [...]
-    <address>192.168.2.1</address>
+    <address>192.168.3.1</address>
     <num_messages>1</num_messages>
   </plugin>
 </model>
@@ -133,7 +119,7 @@ In this example, we are loading two vehicles with addresses `192.168.2.1` and `1
   <!-- Load the plugin to control this robot -->
   <plugin name="swarm_controller_1" filename="libTeamControllerPlugin.so">
     [...]
-    <address>192.168.2.2</address>
+    <address>192.168.3.2</address>
     <num_messages>1</num_messages>
   </plugin>
 </model>
@@ -180,10 +166,10 @@ if (this->msgsSent < this->numMessageToSend)
 
   std::string dstAddress;
 
-  if (this->Host() == "192.168.2.1")
-    dstAddress = "192.168.2.2";
+  if (this->Host() == "192.168.3.1")
+    dstAddress = "192.168.3.2";
   else
-    dstAddress = "192.168.2.1";
+    dstAddress = "192.168.3.1";
 
   // Send a unicast message.
   if (!this->SendTo("Unicast data", dstAddress))
@@ -216,7 +202,7 @@ if (this->msgsSent < this->numMessageToSend)
 }
 ```
 
-The first task that the controller does is to set the destination address. Then, the controller uses the function `SendTo()` for sending a unicast message, a broadcast message and a multicast message. Note that you don't need to `Bind()` for sending messages. `Bind()` is only used if you are interested on receiving messages. The next snippet shows how to print the list of local neighbors to each robot:
+The first task that the controller does is to set the destination address. Then, the controller uses the function `SendTo()` for sending a unicast message, a broadcast message and a multicast message. Note that you don't need to `Bind()` for sending messages. `Bind()` is only used if you are interested on receiving messages. The next snippet shows how you could print the list of local neighbors to each robot:
 
 ```
 #!python
