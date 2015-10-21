@@ -127,6 +127,33 @@ We have created a header file `LogParser.hh` that can help you if you need to pa
 
 We used `LogParser.hh` for writing `swarmlog`. You can also read the [`swarmlog.cc`]() source code as another log parsing example.
 
+# How to run Gazebo with logging enabled
+
+Remember that Gazebo has its own logging system. You can enable it starting gazebo or gzserver with the `-r` option:
+
+```
+#!python
+gzserver -r worlds/complete.world
+```
+
+After a few seconds, stop the server using CTRL-C.
+
+A new time stamped directory should exist in `~/.gazebo/log` with one subdirectory and a `state.log` file. Here is an example:
+
+```
+#!python
+
+~/.gazebo/log/2013-07-25T07\:29\:05.122275/gzserver/state.log
+```
+
+You can verify this log file by replaying it in Gazebo:
+
+```
+#!python
+
+gazebo -p ~/.gazebo/log/2013-07-25T07\:29\:05.122275/gzserver/state.log
+```
+
 
 
 
