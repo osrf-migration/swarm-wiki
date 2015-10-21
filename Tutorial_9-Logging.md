@@ -4,7 +4,7 @@ This tutorial will describe the Swarm logging features, how to use it, and how t
 
 Gazebo already has logging capabilities but are slightly different from the Swarm logging described in this tutorial. A Gazebo log contains the state of the simulation during each cycle. In a nutshell, Gazebo logs the position and velocities of all the models during the whole simulation. However, it does not log information contained in plugins. The Swarm logging logs in a separate file data specifically interesting for the Swarm project, such as the sensor observations, the actions sent from the controller to the robot, or the communication exchange among the robots.
 
-# Log's content
+# Swarm Log's content
 
 A Swarm log file is composed by a collection of log entries. Each log entry contains the following optional fields:
 
