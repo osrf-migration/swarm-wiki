@@ -129,7 +129,7 @@ We used `LogParser.hh` for writing `swarmlog`. You can also read the [`swarmlog.
 
 # How to run Gazebo with logging enabled
 
-Remember that Gazebo has its own logging system. You can enable it starting gazebo or gzserver with the `-r` option:
+Remember that Gazebo has its own logging system. You can enable it starting `gazebo` or `gzserver` with the `-r` option:
 
 ```
 #!python
