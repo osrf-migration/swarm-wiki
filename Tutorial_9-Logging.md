@@ -1,3 +1,5 @@
+[TOC]
+
 # Overview
 
 This tutorial will describe the Swarm logging features, how to use it, and how to read information from a log file after running a Gazebo experiment.
