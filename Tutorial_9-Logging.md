@@ -119,6 +119,8 @@ Or you can redirect the output to a file:
 
 `swarmlog -e -f swarm.log > swarm.log.txt`
 
+## Parse a log file from C++
+
 We have created a header file `LogParser.hh` that can help you if you need to parse a log file programmatically:
 
 * *LogParser(const std::string &_filename)*: Class constructor that accepts the full path to the Swarm log file as a parameter.
@@ -126,6 +128,41 @@ We have created a header file `LogParser.hh` that can help you if you need to pa
 * *bool Next(msgs::LogEntry &_entry)*: Read the next log entry from the log. If the return value is `true`, a new log entry was parsed successfully. You can read about the [Google Protocol Buffers C++ API](https://developers.google.com/protocol-buffers/docs/cpptutorial) for learning how to access the individual fields of the log entry in case you are not familiar with Protocol Buffers. If you are at the end of the log file or an unexpected problem happened while parsing the next entry, the function will return `false`.
 
 We used `LogParser.hh` for writing `swarmlog`. You can also read the [`swarmlog.cc`]() source code as another log parsing example.
+
+## Parse a log file from Python
+
+In `tools/swarmlog_to_csv_example.py` you will find an example of parsing a swarm log file in Python, which can be more convenient than C++ for such tasks.  Please use this example as the basis for your own processing tools.  Start by modifying the `process_msg()` function.
+
+The example runs through a given log file, processing each message to look for reports of message sends and deliveries.  It produces CSV output of per-time-step message statistics on stdout, ready to be plotted, formatted like so:
+
+~~~~
+# time, msg_sent, potential_recipients, msgs_delivered, drop_ratio
+0.010000,0,0,0,0.000000
+0.020000,99,2016,1980,0.017857
+0.030000,66,1386,1353,0.023810
+0.040000,66,1386,1350,0.025974
+0.050000,66,1386,1359,0.019481
+0.060000,66,1342,1297,0.033532
+~~~~
+
+E.g., if you have a log called `swarm.log`, then you could process it like so to produce CSV data:
+
+    swarmlog_to_csv_example.py swarm.log > swarm.csv
+
+Then you could plot (for example) the ratio of dropped messages like so using `gnuplot` (you could use other tools, like `octave`):
+
+    gnuplot> set datafile separator ","
+    gnuplot> plot 'swarm.csv' using 1:5 with lines
+
+Then you could make a PNG like so:
+
+    gnuplot> set terminal png
+    gnuplot> set output 'swarm_drop_ratio.png'
+    gnuplot> replot
+
+Here's an example from a 25-second run in which the vehicles were only communicating for the first 10 seconds, showing approximately 2.5% message loss:
+
+![swarm_drop_ratio.png](https://bitbucket.org/repo/KAjzok/images/2318604937-swarm_drop_ratio.png)
 
 # How to run Gazebo with logging enabled
 
@@ -156,7 +193,6 @@ gazebo -p ~/.gazebo/log/2013-07-25T07\:29\:05.122275/gzserver/state.log
 
 You can explore the command `gz log` for introspecting Gazebo log files. E.g.:
 
-
 ```
 #!python
 
@@ -169,6 +205,3 @@ Size:           341.608 KB
 Encoding:       zlib
 
 ```
-
-
-
