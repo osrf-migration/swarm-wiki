@@ -20,7 +20,7 @@ Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first.
 1. [Finding the person and reporting success](https://bitbucket.org/osrf/swarm/wiki/Tutorial_7-Find_person)
 1. [Log your experiments](https://bitbucket.org/osrf/swarm/wiki/Tutorial_9-Logging)
 1. [Upload log files](https://bitbucket.org/osrf/swarm/wiki/Tutorial_8-Upload_log_files)
-1. [Run multiple Gazebo instances in parallel](https://bitbucket.org/osrf/swarm/wiki/Tutorial_10-Multiple_gazebo_instances))
+1. [Run multiple Gazebo instances in parallel](https://bitbucket.org/osrf/swarm/wiki/Tutorial_10-Multiple_gazebo_instances)
 
 # Test worlds
 
