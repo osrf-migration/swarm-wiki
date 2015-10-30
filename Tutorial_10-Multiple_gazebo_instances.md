@@ -27,7 +27,7 @@ Simulating a Swarm world is a CPU intensive task, specially if the number of rob
 
 If Gazebo can maintain real-time during your experiment, try setting `real_time_update_rate` to 0.
 
-If Gazebo cannot maintain real-time, you can experiment increasing `max_step_size`. Be aware that your controller updates will be less frequent which might make the control of the vehicles harder.
+If Gazebo cannot maintain real-time, you can experiment increasing `max_step_size`. Be aware that your controller updates will be less frequent, which might make the control of the vehicles harder.
 
 You can change these parameters using the Gazebo physics properties GUI on the left panel. Alternatively, you can modify these parameters in the provided world files.
 
