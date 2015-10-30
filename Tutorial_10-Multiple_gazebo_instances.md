@@ -25,7 +25,7 @@ Simulating a Swarm world is a CPU intensive task, specially if the number of rob
 * `max_step_size`: Specifies the time duration in seconds of each physics update step.
 * `real_time_update_rate`: Specifies in Hz the number of physics updates that will be attempted per second. If this number is set to zero, it will run as fast as it can. Note that the product of real time update rate and max step size represents the target real time factor, or ratio of simulation time to real-time.
 
-If Gazebo can maintain real-time during your experiment, try setting `max_step_size` to 0.
+If Gazebo can maintain real-time during your experiment, try setting `real_time_update_rate` to 0.
 
 If Gazebo cannot maintain real-time, you can experiment increasing `max_step_size`. Be aware that your controller updates will be less frequent which might make the control of the vehicles harder.
 
