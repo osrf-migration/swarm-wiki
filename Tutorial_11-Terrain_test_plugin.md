@@ -5,7 +5,7 @@ Thanks to @esquires for providing this tool.
 # Usage
 Two example worlds are provided that use the terrain test plugin. These are `terrain_test.world` and `terrain_test_roberts.world`. The first world uses the default terrain, and the second uses a DEM of Camp Roberts.
 
-1. Compile the swarm code and example code as usual
+1. Compile and install the swarm code and example code as usual
 
 1. Within the `swarm` build directory, run `gzserver` to generate the `elevation.csv` and `terrain.csv` files.
 
