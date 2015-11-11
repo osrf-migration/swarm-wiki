@@ -13,7 +13,7 @@ Two example worlds are provided that use the terrain test plugin. These are `ter
 gzserver worlds/terrain_test_roberts.world --iters 1
     ```
 
-1. Generates PNG representations of the elevation and terrain type.
+1. Generate PNG representations of the elevation and terrain type.
 
     ```
 python ../tools/terrain.py
