@@ -1,5 +1,14 @@
 This tutorial describes how to upload a log file to Amazon's S3.
 
+**Recommendation**
+The swarm code comes with a `swarm_log_upload.sh` script that handles log file upload for you.
+
+1. In the swarm source code run:
+
+```
+sh tools/swarm_log_upload.sh <team_name>
+```
+
 Each team should have received S3 credentials. If not, contact your team lead or Nate (nate@osrfoundation.org).
 
 ## Log files to upload
