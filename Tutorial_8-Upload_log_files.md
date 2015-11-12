@@ -36,10 +36,45 @@ s3cmd ls s3://osrf-swarm/<team>
 ## Upload a log file
 
 ```
-s3cmd sync <your_file> s3://osrf-swarm/<team>/<timestamp>/
+s3cmd sync <your_file_or_directory> s3://osrf-swarm/<team>/<timestamp>/
 ```
 
-Make sure you end the `s3` path with a forward slash to create a directory.
+The `s3cmd` is a bit picky about forward slashes:
+
+* If you are uploading a directory, do not put a trailing forward-slash on the local directory name:
+
+    * Good: `s3cmd sync my_dir_name s3://osrf-swarm/<team>/`
+    * Bad:  `s3cmd sync my_dir_name/ s3://osrf-swarm/<team>/`
 
 In general, you should upload both `~/.gazebo/log/<timestamp>/gzserver/state.log` and `~/.swarm/log/<timestamp>/swarm.log`.  See the [tutorial on logging](https://bitbucket.org/osrf/swarm/wiki/Tutorial_9-Logging) for more information.
+
+## Uploading tip
+
+1. Place all your log files, and any supplementary files into one timestamped directory. For example:
+
+    ```
+cd /tmp
+    ```
+
+    ```
+cp ~/.swarm/log/2015-10-22T11:02:31.861422 .
+    ```
+
+    ```
+cp ~/.gazebo/log/2015-10-22T11:02:31.861422/gzserver/* 2015-10-22T11:02:31.861422 
+    ```
+
+1. Upload that directory to s3
+
+    ```
+s3cmd sync 2015-10-22T11:02:31.861422 s3://osrf-swarm/<team>/
+    ```
+
+1. Note that there is no trailing slash on local directory name, but a trailing slash on the team.
+
+1. Check for a correct upload by listing the directory contents on s3. There should be a timestamped directory, with a trailing forward-slash.
+
+    ```
+s3cmd ls s3://osrf-swarm/<team>
+    ```
 
