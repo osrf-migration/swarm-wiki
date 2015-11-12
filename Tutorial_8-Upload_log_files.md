@@ -3,7 +3,7 @@ This tutorial describes how to upload a log file to Amazon's S3.
 
 Each team should have received S3 credentials. If not, contact your team lead or Nate (nate@osrfoundation.org).
 
-## Recommended upload procedure
+# Recommended upload procedure
 
 The swarm code comes with a `swarm_log_upload.sh` script that handles log file upload for you.
 
@@ -13,7 +13,7 @@ The swarm code comes with a `swarm_log_upload.sh` script that handles log file u
 sh tools/swarm_log_upload.sh <team_name>
 ```
 
-## Log files to upload
+# Log files to upload
 
 It is necessary to upload both the swarm and gazebo log files. These log files are located at:
 
