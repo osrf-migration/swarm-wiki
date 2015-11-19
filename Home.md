@@ -23,6 +23,7 @@ Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first.
 1. [Run multiple Gazebo instances in parallel](https://bitbucket.org/osrf/swarm/wiki/Tutorial_10-Multiple_gazebo_instances)
 1. [Terrain test plugin](https://bitbucket.org/osrf/swarm/wiki/Tutorial_11-Terrain_test_plugin)
 1. [How to create your BOO controller](https://bitbucket.org/osrf/swarm/wiki/Tutorial_12-How_to_create_your_BOO_controller)
+1. [How to create a custom world](https://bitbucket.org/osrf/swarm/wiki/Tutorial_13-Create_custom_world)
 
 # Test worlds
 
