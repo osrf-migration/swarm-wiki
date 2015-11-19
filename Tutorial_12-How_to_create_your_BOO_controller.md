@@ -1,19 +1,19 @@
 # Overview
 
-A Swarm controller is implemented as a model plugin attached to one of the robots under simulation. We have created a template that will help you writing your first controller.
+A BOO controller is implemented as a model plugin attached to the stationary Base of Operations. We have created a template that will help you writing your controller.
 
-# Write your first Swarm controller
+# Write your BOO controller
 
-1. First, create a `swarm_controller` directory:
+1. First, create a `boo_controller` directory:
 
-        mkdir swarm_controller
-        cd swarm_controller
+        mkdir boo_controller
+        cd boo_controller
 
-1. Download the example files into the `swarm_controller` directory:
+1. Download the example files into the `boo_controller` directory:
 
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_1/CMakeLists.txt
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_1/TeamControllerPlugin.hh
-        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_1/TeamControllerPlugin.cc
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_12/CMakeLists.txt
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_12/BooControllerPlugin.hh
+        wget https://bitbucket.org/osrf/swarm/raw/default/tutorials/tutorial_12/BooControllerPlugin.cc
 
 1. Create a `build` directory:
 
@@ -29,32 +29,26 @@ A Swarm controller is implemented as a model plugin attached to one of the robot
 
         sudo make install
 
-**Important:** Do not change the name of the library `libTeamControllerPlugin.so`. The Swarm world files assume that your controller has this specific name. 
+**Important:** Do not change the name of the library `libBooControllerPlugin.so`. The Swarm world files assume that your controller has this specific name. 
 
-# Test your first Swarm controller #
+# Test your Boo controller #
 
-Your first controller (*libSwarmControllerPlugin.so*) is ready to be tested. We assume that you have completed the [installation step](https://bitbucket.org/osrf/swarm/wiki/Install) and your Swarm system is up and running.
+Your first controller (*libBooControllerPlugin.so*) is ready to be tested. We assume that you have completed the [installation step](https://bitbucket.org/osrf/swarm/wiki/Install) and your Swarm system is up and running.
 
 Run Gazebo with a basic Swarm world file:
 
-        gazebo worlds/ground_simple_2.world --verbose
+        gazebo worlds/complete_10.world --verbose
 
 You should see the following output on the console:
 
 
 ```
 #!python
-Gazebo multi-robot simulator, version 6.0.7
-Copyright (C) 2012-2015 Open Source Robotics Foundation.
-Released under the Apache 2 License.
-http://gazebosim.org
-
 [Msg] Waiting for master.
 [Msg] Connected to gazebo master @ http://127.0.0.1:11345
-[Msg] Publicized address: 172.23.1.7
-[Msg] BrokerPlugin::ReadSwarmFromSDF: 2 swarm members found
-[Msg] [192.168.2.1] Swarm controller plugin loaded successfully
-[Msg] [192.168.2.2] Swarm controller plugin loaded successfully
+[Msg] Connected to gazebo master @ http://127.0.0.1:11345
+[Msg] Publicized address: 172.23.3.69
+[Msg] Publicized address: 172.23.3.69
+[Msg] BrokerPlugin::ReadSwarmFromSDF: 31 swarm members found
+Boo plugin loaded
 ```
-
-Note that there are two confirmation messages because this world file loads two models, hence two robot controllers will be loaded in Gazebo.
