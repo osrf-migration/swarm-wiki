@@ -33,4 +33,4 @@ In this example, we'll just modify the start location of the lost person.
 
 4. Run simulation
 
-        gazebo worlds/my_custom_world.world
+        gazebo worlds/custom.world
