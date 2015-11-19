@@ -10,7 +10,7 @@ In this example, we'll just modify the start location of the lost person.
 
 1. Add a new function for your world. In `worlds/master.erb`, add:
 
-        def my_custom_world()
+        def custom()
           default()
           $lost_person_x = 20
           $lost_person_y = 20   
@@ -18,7 +18,13 @@ In this example, we'll just modify the start location of the lost person.
 
 2. Add the function to the hash, located at the bottom of `worlds/master.erb`.
 
-        h["my_custom_world.world"] = method(:my_custom_world)
+        h["custom.world"] = method(:custom)
+
+3. Add the the world filename to the `generated_master_world_files` in `worlds/CMakeLists.txt`.
+
+        set (generated_master_world_files custom.world
+          ...
+        )
 
 3. Make and install the swarm code
 
