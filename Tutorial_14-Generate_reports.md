@@ -21,7 +21,7 @@ sudo apt-get install texlive-latex-recommended
 ```
 
 
-* Make sure that you are generating the python bindings when compiling the Swarm code. When running `make install` you should see quite a few python files to be installed. If not, install the following package:
+* Make sure that you are generating the python bindings when compiling the Swarm code. When running `make install` you should see quite a few python files installed in your target directory. If not, install the following package:
 
 ```
 #!python
