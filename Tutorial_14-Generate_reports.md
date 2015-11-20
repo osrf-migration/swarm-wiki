@@ -4,7 +4,7 @@ This tutorial describes how to use the `swarm_generate_report` command to automa
 
 Prerequisites:
 
-* Install gnuplot for generating plots:
+* Install `gnuplot` for generating plots:
 
 ```
 #!python
@@ -12,7 +12,7 @@ Prerequisites:
 sudo apt-get install gnuplot
 ```
 
-* Install pdflatex:
+* Install pdflatex`:
 
 ```
 #!python
