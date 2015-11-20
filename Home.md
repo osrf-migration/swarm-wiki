@@ -24,6 +24,7 @@ Gazebo. Please directly ask OSRF for help, using the swarm mailing list, first.
 1. [Terrain test plugin](https://bitbucket.org/osrf/swarm/wiki/Tutorial_11-Terrain_test_plugin)
 1. [How to create your BOO controller](https://bitbucket.org/osrf/swarm/wiki/Tutorial_12-How_to_create_your_BOO_controller)
 1. [How to create a custom world](https://bitbucket.org/osrf/swarm/wiki/Tutorial_13-Create_custom_world)
+1. [Generate a PDF report using a log file](https://bitbucket.org/osrf/swarm/wiki/Tutorial_14-Generate_reports)
 
 # Test worlds
 
