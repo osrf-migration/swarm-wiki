@@ -1,4 +1,4 @@
-This tutorial describes how to use the `swarm_generate_report` command to automatically process a log file and generate a PDF report. The first section of the report consists of a summary with some of the parameters of your experiment, such as number of messages sent, duration of the experiment, or the average number of neighbors per robot, among others. The following sections show plots with more detailed information of different aspects of the experiment (communication, coverage).
+This tutorial describes how to use the `swarm_generate_report` command to automatically process a log file and generate a PDF report. The first section of the report consists of a summary with some of the parameters of your experiment, such as number of messages sent, duration of the experiment, or the average number of neighbors per robot, among others. The following sections show plots with more detailed information of different aspects of the experiment.
 
 ## Prerequisites:
 
