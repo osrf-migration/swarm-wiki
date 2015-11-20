@@ -12,7 +12,7 @@ Prerequisites:
 sudo apt-get install gnuplot
 ```
 
-* Install pdflatex`:
+* Install `pdflatex`:
 
 ```
 #!python
