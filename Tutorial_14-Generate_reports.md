@@ -20,6 +20,15 @@ sudo apt-get install gnuplot
 sudo apt-get install texlive-latex-recommended
 ```
 
+* Set the name of your team in the `SWARM_TEAMNAME` environment variable. Replace `<YOUR_TEAMNAME>` with the name of your team (BYU, GTRI, NPS, UPENN).
+
+```
+#!python
+
+echo -e "\n# Swarm\nexport SWARM_TEAMNAME=OSRF" >> ~/.bashrc
+source ~/.bashrc
+```
+
 
 * Make sure that you are generating the python bindings when compiling the Swarm code. When running `make install` you should see quite a few python files installed in your target directory. If not, install the following package:
 
