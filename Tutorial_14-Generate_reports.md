@@ -25,7 +25,7 @@ sudo apt-get install texlive-latex-recommended
 ```
 #!python
 
-echo -e "\n# Swarm\nexport SWARM_TEAMNAME=OSRF" >> ~/.bashrc
+echo -e "\n# Swarm\nexport SWARM_TEAMNAME=<YOUR_TEAM_NAME>" >> ~/.bashrc
 source ~/.bashrc
 ```
 
