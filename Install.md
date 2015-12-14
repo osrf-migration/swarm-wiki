@@ -70,12 +70,9 @@ You should see the following output confirming that your installation succeeded,
 #!python
 [Msg] Waiting for master.
 [Msg] Connected to gazebo master @ http://127.0.0.1:11345
-[Msg] Publicized address: 172.23.2.154
+[Msg] Publicized address: 172.23.1.7
 [Msg] BrokerPlugin::ReadSwarmFromSDF: 3 swarm members found
-[Msg] [192.168.3.1] Neighbors:
-[Msg] 	192.168.3.2
-[Msg] 	boo
-[Msg] [192.168.3.2] Neighbors:
-[Msg] 	192.168.3.1
-[Msg] 	boo
+[Msg] [192.168.3.1] TeamController plugin loaded succesfully
+[Msg] [192.168.3.2] TeamController plugin loaded succesfully
+
 ```
