@@ -1,6 +1,6 @@
 # Overview
 
-The Swarm setup is composed of a [Gazebo robot simulator](http://gazebosim.org), a [ns-3 network simulator](http://www.nsnam.org), a client library and a client controller. Gazebo simulates the environment, the robots, and the sensors, whereas ns-3 models and simulates the communication among the vehicles. The Swarm client library offers the communication, sensor access and motion API to the client controller. The client controller guides each simulated robot using the Swarm API.
+The Swarm setup is composed of a [Gazebo robot simulator](http://gazebosim.org), a client library and a client controller. Gazebo simulates the environment, the robots, the communications, and the sensors. The Swarm client library offers the communication, sensor access and motion API to the client controller. The client controller guides each simulated robot using the Swarm API.
 
 # Install
 
