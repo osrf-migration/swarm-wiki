@@ -24,12 +24,6 @@ Detailed instructions located [here](http://gazebosim.org/tutorials?tut=install_
 
 1. `wget -O /tmp/gazebo6_install.sh http://osrf-distributions.s3.amazonaws.com/gazebo/gazebo6_install.sh; sudo sh /tmp/gazebo6_install.sh`
 
-## ns-3
-
-**ns-3 is not required yet.** 
-
-Follow the instructions described in the [ns-3 installation tutorial](https://www.nsnam.org/wiki/Installation).  You might find the [Bake installation method](https://www.nsnam.org/wiki/Installation#Installation_with_Bake) easiest.
-
 ## Swarm client library
 
 1. Clone the repository into a directory in your home folder:
