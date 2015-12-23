@@ -6,7 +6,7 @@ This tutorial demonstrates how to use an experimental Python API for writing you
 
 The idea is that you write a Python file (more generally, a module) that includes functions for loading, updating, and receiving messages. Then you configure a C++ plugin to call those functions.
 
-The code described here is in the [tutorial_9 directory](https://bitbucket.org/osrf/swarm/src/add_python_api/tutorials/tutorial_9/?at=add_python_api).
+The code described here is in the [tutorial_15 directory](https://bitbucket.org/osrf/swarm/src/add_python_api/tutorials/tutorial_15/?at=add_python_api).
 
 # The C++ piece
 
@@ -120,9 +120,9 @@ def myondatareceived(me, src_address, dst_address, dst_port, data):
 To try out the Python API:
 
 * Build and install Swarm as usual, including the `examples` directory (needed to get a default BOO plugin installed).
-* Build and install tutorial_9:
+* Build and install tutorial_15:
 
-        cd swarm/tutorials/tutorial_9
+        cd swarm/tutorials/tutorial_15
         mkdir build
         cd build
         cmake .. -DCMAKE_INSTALL_PREFIX=/usr
@@ -131,7 +131,7 @@ To try out the Python API:
 
 * Adjust your `PYTHONPATH` so that `mycontroller.py` can be found, then run the simulation
 
-        cd swarm/tutorials/tutorial_9
+        cd swarm/tutorials/tutorial_15
         export PYTHONPATH=`pwd`:$PYTHONPATH
         gazebo  --verbose worlds/ground_easy_4.world
 
