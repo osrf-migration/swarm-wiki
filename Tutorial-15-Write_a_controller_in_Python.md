@@ -1,4 +1,4 @@
-**Note: requires pending pull request: 
+**Note: requires pending pull request: https://bitbucket.org/osrf/swarm/pull-requests/109/add-python-api/diff **
 
 # Overview
 
